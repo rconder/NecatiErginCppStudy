@@ -5,7 +5,7 @@ struct Nec {
 	int a, b;
 };
 
-Nec   f1();
+Nec   f1(); 
 Nec&  f2();
 Nec&& f3();
 

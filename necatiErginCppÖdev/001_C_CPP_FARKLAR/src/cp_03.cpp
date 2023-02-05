@@ -15,19 +15,19 @@ int main()
 	const int* const p4 = &x; //p4 is constant pointer to constant int
 
 	*p1 = 40; //sentaks hatası yok 
-	p1 = &y; //p1 constant pointer olduğu için yeni bir adres alamaz
+	//p1 = &y; //p1 constant pointer olduğu için yeni bir adres alamaz
 	//neco:p1'e başka adres atılamaz hayatı boyunca aynı değeri tutucak
-	*p2 = 40;//p2 pointer to constant int olduğu için salt okuma amacı ile erişmiştir 
+	//*p2 = 40;//p2 pointer to constant int olduğu için salt okuma amacı ile erişmiştir 
 	//neco:p2'nin gösterdiği nesnenin değerinin değiştirilmemesi
 	p2 = &y;// sentaks hatası yok
 
-	*p3 = 40;//bir önceki ile aynı
+	//*p3 = 40;//bir önceki ile aynı
 	//neco:
 	p3 = &y;//sentaks hatası yok
 	
-	*p4 = 40;//constant int olduğu için salt okuma amacı ile erişebilir.
+	//*p4 = 40;//constant int olduğu için salt okuma amacı ile erişebilir.
 	//neco:
-	p4 = &y;//constant pointer olduğu için yeni bir değer alamaz.
+	//p4 = &y;//constant pointer olduğu için yeni bir değer alamaz.
 	//neco:
 }
 

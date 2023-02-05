@@ -13,7 +13,7 @@ int main()
 	int x = 10;
 	int y = 20;
 	int z;
-	z = x, y;
+	z = x, y; //expression result unused uyarısı verir, z'ye x'in değerini atar
 	std::cout << z;
 }
 /* ``` */

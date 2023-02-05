@@ -9,7 +9,7 @@
 int main() 
 {
 	void * vp = &vp, **vpp = &vp;
-	std::cout << bool(vp) << bool(*vpp); //true true
+	std::cout << bool(vp) << bool(*vpp); //11
 }
 /* ```
 

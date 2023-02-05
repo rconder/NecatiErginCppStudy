@@ -20,7 +20,7 @@ int main()
 	const double *dptr{ &dval };
 
 	int *ptr = (int *) std::malloc(100'000);
-	int x =(int) c;
+	int x = static_cast<int> (c);
 	pos = (Pos) c;
 	c = (Color) ival;
 	ival = dval;
@@ -35,5 +35,6 @@ int main()
 	vptr = &vptr;
 	float f = dval;
 }
-/* ``` 
+/* 
+``` 
  */
