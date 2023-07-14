@@ -59,6 +59,14 @@
         "unordered_map": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "__verbose_abort": "cpp",
+        "bit": "cpp",
+        "deque": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "stack": "cpp",
+        "regex": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
