@@ -68,7 +68,8 @@
         "stack": "cpp",
         "regex": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "thread": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

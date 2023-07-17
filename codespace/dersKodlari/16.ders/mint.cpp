@@ -14,6 +14,3 @@ std::istream& operator>>(std::istream &is,  Mint &mint)
 {
     return is>>mint.m_x;
 } 
-
-//17.ders ilavesi
-

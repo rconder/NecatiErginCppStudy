@@ -18,7 +18,7 @@ namespace salt_okuma_array
     }
 }
 
-namespace intarray_sinifi
+namespace intarray_sinifi_operator_overloading
 {
     /*
     basit bir array sınıfı

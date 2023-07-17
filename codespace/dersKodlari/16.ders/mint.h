@@ -18,7 +18,7 @@
 
 class Mint{ //duruma göre avantajı olabilir.
 public:
-     //default init edilse dahi 0 değeri ile başlaması sağlanabilir
+    //default init edilse dahi 0 değeri ile başlaması sağlanabilir
     //0'a bölme tanımsız davranıştır exception throw edilebilir.
     //otomatik dönüşüm engellenebilir. 
     //Strong types konusu altında anlatıyor.
