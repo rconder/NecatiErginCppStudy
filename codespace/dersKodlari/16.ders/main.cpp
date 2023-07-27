@@ -29,6 +29,7 @@ public:
     int &operator[](int i)
     {
         std::cout << "Nec::operator[]() i = " << i << "\n";
+        return 
     }
 };
 

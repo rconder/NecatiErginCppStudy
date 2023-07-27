@@ -108,8 +108,7 @@ namespace sarmalayan_sinif_ornek
         std::string *mp;
     }
 
-    int
-    main()
+    int  main()
     {
         {
             SmartStringPtr ptr{new std::string{"necati ergin"}};
@@ -133,7 +132,8 @@ namespace operator_parantez_overloading
     // operator () overloading
     class Mycalss
     {
-        publi : void operator()()
+        public:
+         void operator()()
                 // void operator() (int x) {std::cout<<" Myclass::operator()(x) x = " << x " \n"; }
                 void
                 operator()(int x = 0)
@@ -209,7 +209,6 @@ namespace random_sayi_stl_ornek_
             cout << dist(eng) << " "; // dist( )
         }
     }
-
 }
 /** Tür dönüşüm operatorleri */
 namespace tur_donusturme_1
@@ -317,7 +316,8 @@ namespace tur_donusturme_ornek_3
 
     private:
         int m_c;
-    } int main()
+    } 
+    int main()
     {
         std::cout << " c = " << c << "\n";
         ++c;
@@ -353,26 +353,27 @@ namespace operator_bool_fonksiyonu
     public:
         // operator bool( )const
         explicit operator bool() const
+        // Eğer explicit yazılmazsa user defined + standart converison'dan dolayı 
+        // tür dönüşümü yapılıyor.
         {
             std::cout << "Nec operator bool()\n";
             return true;
         }
     }
 
-    int
-    main()
+    int   main()
     {
         double x;
         Nec mynec;
         // x= mynec;//bu durumda user defined + standart conversiondan dolayı x'in değeri 1 oldu
         //  bunu önlemek için fonksiyon explicit yapılmalı
         // std::cout << "x= "<< x << "\n";
-        if (mynec)
+       // if (mynec)
+       if
         {
             std::cout << "YAPARIM DOGRU\n";
         }
     }
-
 } // namespace operator_bool_fonksiyonu
 
 namespace operator_bool_fonksiyonu_2
@@ -447,7 +448,6 @@ namespace operator_tur_donusturme_scoped_enum
         Friday,
         Saturday
     };
-
     int main()
     {
         Weekday wd{Weekday::Sunday};
