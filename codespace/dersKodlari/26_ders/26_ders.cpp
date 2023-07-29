@@ -685,7 +685,7 @@ namespace 26_ders
         
     };
     class MCDer: public MDer{
-        public:∏
+        public:
         MCDer(): Base(4){}s 
     };
         int main()//main'de cagir!!!
