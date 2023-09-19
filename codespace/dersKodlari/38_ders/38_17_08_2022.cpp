@@ -1,0 +1,418 @@
+#include <iostream>
+#include <vector>
+#include <list>
+#include <array>
+#include <iterator>
+#include <string>
+
+#include "date.h"
+#include "nutility.h"
+using namespace std;
+namespace ders38
+{
+    namespace std_vector
+    {
+        /* Öğelerin dinamik bellek alanında aradışık tutulduğu veri yapısı
+        container'ın size: veri yapısının tuttuğu eleman sayısı
+        container'ın capacity: Re-allocation yapmadan tutulabilecek maksimum eleman sayısı.  Sondan ekleme ve sonda silme işlemeinin amortise zamanda yapıla bilmesi için
+
+        Not: Vector'e alternatif olarak boost kütüphanesinde başka containerlarda var
+
+        Bazı işlemler için global fonksiyonlar ve algoritma fonksiyonlarını kullanabiliyoruz.-
+        */
+
+        namespace giris_
+        {
+            struct Nec
+            {
+                Nec(int);
+            } int main() // main'de cagir!!!
+            {
+                std::cout << "allocator_template_degiskenini_unutma main\n";
+                vector<int> ivec; // henüz eleman tutmayan size 0 olan bir vector dosyası
+                vector<int> ivec1{};
+                cout << "ivec size: " << ivec.size();
+                cout << ivec.empty();
+                vector<int> ivec2(); // burada nesne oluşturulmuş olmuyor fonksiyon bildirmiş oluyoruz
+                // eskiden bunun ciddi bir maliyeti vardı ama artık taşıma semantiği ile kullanabiliyoruz.
+
+                vector<int> ivec3;
+                vector x = ivec;                // CTAD
+                vector x1 = {1, 3, 4, 5, 7, 8}; // vector<int> x1 yazmaya gerek yok
+                // size_t parametreli bir
+                vector<int> ivec(20); // size_t parametreli constructor bu diyorki vector nesnesinin size'ı 20 olsun
+                // ve bunu value init ediyor. Çöp değerde değil
+                // 20'sinin değeride.
+                for (const auto i : ivec)
+                {
+                    cout << i;
+                }
+                vector<Nec> necvec(20); // SENTAKS Hatası çünkü yapılan çağrıdaki sınıfın default ctor'u yok
+
+                vector<Date> dvec(30);
+                for (const auto &d : dvec)
+                    cout << d;
+
+                vector<int> x_(5); // size_t parametreli ctor cağırılıyor 5 öğesi var değerleri 0
+                vector<int> y_{5}; // initlist ctor çağırılıyor 1 öğesi var değeri 5
+
+                // size_t ve fill ctor
+                int ival = 3;
+                vector<int> v1(10, 7);
+                vector<int> v2(20, ival);
+                vector<string> v3(10, "bilal");
+                print(v1);
+                print(v2);
+                print(v3);
+
+                vector<int>{1, 4, 6, 8};
+
+                return 0;
+            }
+        }
+        /* Yorum Baslik:range_ctor
+
+        */
+        namespace range_ctor_capacity_size
+        {
+
+            int main() // main'de cagir!!!
+            {
+                std::cout << "range_ctor main\n";
+                vector<int> ivec{1, 5, 7, 9, 12, 76};
+                list<int> ililst{1, 5, 9, 2, 0, 3};
+                //                vector<double> dvec = ivec;
+                vector<double> dvec{ivec.begin(), ivec.end()};
+                // int vectordeki öğelerle double vector oluşturduk.
+                vector<int> x{next(ililst.begin()), ilist.end()};
+                int ar[]{1, 4, 7, 2, 3, 2, 1, 8, 7, 6};
+                vector<int> ivec1{ar, ar + asize(ar)};
+                vector<int> ivec2{begin(ar), end(ar)};
+
+                // range ctor kullanacağın her yerde range ctor kullan
+                {
+                    vector<int> v1(10);
+                    auto cap = v1.capacity();
+                    int cnt{};
+                    for (int i = 0; i < 1'000'000; ++i)
+                    {
+                        v1.push_back(i);
+                        if (v1.capacity() > cap)
+                        {
+                            cout << ++cnt << ".inci allocation size is " << v1.size() << " capacity is " << v1.capacity() << "\n";
+                            cap = v1.capacity();
+                            (void)getchar();
+                        }
+                    }
+                }
+                // eğer burada capacity'i baştan biliyorsak reserve fonksiyonunu kullnaarak reallocationdan kurtulabilirdik
+                {
+                    vector<int> v1(10);
+                    v1.reserve(1'000'000);
+                    auto cap = v1.capacity();
+                    int cnt{};
+                    for (int i = 0; i < 1'000'000; ++i)
+                    {
+                        v1.push_back(i);
+                        if (v1.capacity() > cap)
+                        {
+                            cout << ++cnt << ".inci allocation size is " << v1.size() << " capacity is " << v1.capacity() << "\n";
+                            cap = v1.capacity();
+                            (void)getchar();
+                        }
+                    }
+                }
+                // burada reserve edilmiş capacity'i kullanamazsın çünkü o size değil sadece capacity orada öğe yok.
+                /*
+                size()
+                capacity()
+                empty()
+
+                */
+                return 0;
+            }
+        } // range_ctor sonu
+        // c apileri ile kullanılabiliyor
+        /* Yorum Baslik:c_apisi_ile
+         */
+        namespace c_apisi_ile
+        {
+            void func(int *, size_t);
+            int main() // main'de cagir!!!
+            {
+                std::cout << "c_apisi_ile main\n";
+                vector<int> ivec{1, 5, 7, 9, 12, 76};
+                // bellek alanı contiguos olduğu için
+                func(&ivec[0], ivec.size());
+                func(ivec.data(), ivec.size());
+                // func(data(ivec),ivec.size());// C++ 20 ile eklendi
+                func(data(ivec), size(ivec));
+                func(&*ivec.begin(), ivec.size());
+                func(&ivec.front(), ivec.size());
+
+                // C apileri ile birlikte kullanabiliyoruz. FAKAT Deq container'ında ise bu avantaj yok çünkü bellekte bu öğeler contigous değil
+
+                auto iter = ivec.begin();
+                iter = iter + 5;
+                iter = iter - 2;
+                iter += 3;
+                iter -= 2;
+                auto iter_end = ivec.end();
+                int size_vec = iter - iter_end;
+                if (iter_end >= iter)
+                    cout << "iner_end daha buyuk";
+
+                return 0;
+            }
+        } // c_apisi_ile sonu
+        /* Yorum Baslik:ogelere_erisim
+         */
+        namespace ogelere_erisim
+        {
+
+            int main() // main'de cagir!!!
+            {
+                std::cout << "ogelere_erisim main\n";
+                const vector<string> svec{"ali", "nur", "eda", "emre", "yesim", "erray", "volkan"};
+                for (size_t i = 0; i < svec.size(); ++i)
+                {
+                    svec[i] += "can";
+                }
+                for (size_t i = 0; i < svec.size(); ++i)
+                {
+                    cout << svec[i];
+                }
+                //[] index geçerliliğini sınamaz ve exception throw etmez tanımsız davranış olur fakat at ile exception throw eidlebilir
+
+                try
+                {
+                    auto x = svec.at(12);
+                }
+                // catch(const exception &ex)
+                // catch(const out_of_range &ex)
+                catch (const logic_error &ex)
+                // bunların hepsi ile yakalayabiliriz.
+                {
+                    cout << "exception caught"
+                }
+                // İndex geçersiz şeklinde bir kod yazma hatalı kod yazıldığının bir göstergesi.
+                svec[0] == svec.front();
+                svec[svec.size() - 1] == svec.end();
+
+                svec.front().erase(2); // front ve back fonksiyonları referans ediliyor. //eğer const vector olursa sentaks hatası olur
+                svec.back().erase(2, 3);
+                print(svec);
+
+                auto s = *(svec.begin() + 2);
+
+                // range for size loop'un oluşturduğu döngü değimi
+                for (auto iter = svec.begin(); iter != svec.end(); ++iter)
+                {
+                    cout << iter->size() << "\n";
+                    cout << *iter << "\n";
+                }
+                return 0;
+            }
+        } // ogelere_erisim sonu
+
+        /* Yorum Baslik:mutator_functions
+        Vector'un size'ını değişttiren fonksiyonlar
+         */
+        namespace mutator_functions
+        {
+
+            int main() // main'de cagir!!!
+            {
+                std::cout << "mutator_functions main\n";
+                // resize: hem bir ekleme hem de bir silme fonksiyonu
+                vector<int> ivec{1, 2, 3, 4, 5};
+                ivec.resize(4)
+                    // reallocation gerekirse reallocation yapılıyor
+                    // öğeler sondan ekleniyor ve value initialize ediliyor.
+
+                    // bir container'ı silen  ifade
+                    ivec.resize(0);
+                ivec.clear();
+
+                return 0;
+            }
+            struct Nec
+            {
+                Nec()
+                {
+                    cout << "default ctor";
+                }
+                Nec(const Nec &)
+                {
+                    cout << "copy ctor";
+                }
+                Nec(Nec &&)
+                {
+                    cout << "move ctor";
+                }
+                Nec(int, int, int)
+                {
+                    cout << "int , int int ";
+                }
+            };
+
+            void ekleme_sondan()
+            {
+                vector<string> svec;
+                for (int i{}; i < 10; ++i)
+                {
+                    auto name = rname();
+                    cout << name << "\n";
+                    svec.push_back(name);
+                    print(svec);
+                    (void)getchar();
+                    // bütün insert fonksiyonlarının overload edilmiş olması
+                    string s{"nurullah"};
+                    svec.push_back(s);       // const string&
+                    svec.push_back(move(s)); // string && taşıma semantiğinden faydalanacak ve move ctor çağırılıcak
+                    // vector'e eklerken argüman olan nesneyi move ctor'u çağırarak veya kopyalayarak ekleyebiliriz.
+                    {
+                        vector<Nec> nvec;
+                        nvec.reserve(100);
+                        Nec mynec;
+                        nvec.push_back(mynec);
+                        nvec.push_back(move(mynec));
+                        nvec.emplace_back();             // doğrudan nesneyi vectorun allocate ettiği bellek alanında oluşturuyor.
+                        nvec.push_back(Nec{});           // burada default + move ctor çağırılıyor
+                        nvec.push_back(Nec{1, 3, 5});    // Nec(int,int,int) ve move çağırılıcak
+                        nvec.emplace_back(Nec{1, 3, 5}); // sadece bir kere int int int parametreli fonksiyon çağırılıcak
+                        // emplace_back ya aynı işi yapıcak ya da daha az iş yapacak.
+                    }
+                    // insert fonksiyonlarının isimsel karşılığı emplace
+                    /* Yorum Baslik: Hangi konuma insert ediyorsak orada insert ettiğimiz üye olucak
+                     dolayısıyla insert eedilen öğenin ilk üye olmasını istiyorsak begin() fonksiyonun geri dönüş değerini
+                     son öğe içinse end() konumunu vermeliyiz.
+                     İlk parametre konumu alır, sonrası değişken olabilir
+                     */
+                    {
+                        vector<string> svec{"eray", "ferhat", "emirhan", "musa", "murat"};
+                        print(svec);
+                        svec.insert(begin(svec), "necati");
+                        print(svec);
+                        // front bir iterator konumu değil!!!!
+                        svec.insert(svec.end(), "necati");
+                        // geri dönüş değeri iteratordür ve insert edilmiş ilk öğenin konumunu döndürür
+                        auto iter = svec.insert(svec.begin(), "cansin");
+                        cout << *iter << "\n";
+                        // eğer silme ve ekleme işlemi döngü değimi  ile n kere fonksiyonu çağırmak yerine tek bir fonksiyonu çağırmak daha avantajlı
+                        iter = svec.insert(svec.begin(), {"sezai", "recai", "fedai"});
+                        print(svec);
+
+                        cout << *iter;
+                        list<string> slist{"ayse", "deniz", "leyla", "fadime"};
+                        auto iter = svec.insert(svec.end(), slist.begin(), slist.end());
+                        print(svec);
+                        svec.insert(svec.end(), 10, "recep");
+                        print(svec)
+                    }
+                }
+                void ekleme2()
+                {
+                    vector<string> svec{"eray", "ferhat"};
+                    for (int i = 0; i < 10; ++i)
+                    {
+                        auto s = rname();
+                        cout << s << "\n";
+                        svec.insert(svec.begin(), s);
+                        print(svec);
+                    }
+                    /*  container nesnesine atamada yapabiliriz.
+                     */
+                    vector<string> v1{"eray", "ferhat", "nuri", "selim", "turgut"};
+                    vector<string> v2{"ayşe", "fatma", "hayriye"};
+                    list<string> s2{"ayşe", "fatma", "hayriye", "hayhay"};
+
+                    v1 = v2;
+                    v2 = v2;
+                    v1 = move(v2);
+                    // farklı containerlar birbirine doğrudan atanamaz fakat assign fonksiyonu ile yapılabilir.
+                    print(v1);
+
+                    v1.assign(s2.begin(), s2.end());
+                    print(v1);
+
+                    (v1 = {"ece", "eda", "nur", "gul"}).size(); //*this döndürür
+                    v1.emplace(svec.begin());//vector'un başına empty string eklemiş oluruz
+                    svec.emplace(svec.begin(),5,'A');//5 tane A karakterinde oluşan yazı olucak
+                    print(v1);
+                }
+
+                void silme()
+                {
+                    vector<string> svec{"eray", "ferhat", "nuri", "selim", "turgut"};
+                    vector<string> svec1{"eray", "ferhat", "nuri", "selim", "turgut"};
+                    svec.erase(svec.begin());
+                    print(svec);
+
+                    while(!svec.empty())
+                    {
+                        print(svec);
+                        svec.erase(begin(svec));
+                    }
+                    svec1.pop_bac();//geri dönüş değeri yok void bir fonksiyon sondan silme işlemi ve constant time 
+                    while(!svec1.empty())
+                    {
+                        print(svec1);
+                        svec1.pop_back();
+                        //svec1.erase(prev(svec1.end())); //aynı işi yapıyor
+                    }
+                    svec1 = {"eray", "ferhat", "nuri", "selim", "turgut"};
+                    string name;
+                    cin >> name;
+                    cout <<"silinecek ismi girin";
+                    if(auto iter = find(svec.begin(),svec.end(),name);iter != svec.end())
+                    {
+                        svec1.erase(iter);
+                        print(svec1)
+                    }
+                    auto n = erase(svec,name);
+                    print(svec);
+                    /* Yorum Baslik:insert fonksiyonları inster edilmiş konumu döndürüyor 
+                    erase fonksiyonları ise erase edilmiş konumdan bir sonraki konumu döndürüyor                                    
+                     */
+                    svec1 = {"eray", "ferhat", "nuri", "selim", "turgut"};
+                    svec1.erase(svec.begin(),svec.end());//tüm öğeleri silmiş oluruz
+                    print(svec1);
+                    svec1 = {"eray", "ferhat", "nuri", "selim", "turgut"};
+                    svec1.erase(svec.begin()+1,svec.end()-1);
+                    print(svec1);
+
+                    //silme işlemlemleri
+                    svec.resize();
+                    svec.erase(svec.begin(),svec.end);
+                    svec.erase();
+                    svec = vector<string>{};
+                    svec = {};
+                    svec.assign(vector<string>{});
+                    svec.clear();
+                }
+            }
+            /* Yorum Baslik:vectorün kapasitesi otomatik olarak büyürken 
+            kapasite shrink olmuyor.   
+            eskiden bunun için swap trick kullanılıyordu
+             */
+             namespace shrink_icin_fonk{
+             
+                int main()//main'de cagir!!!
+                {
+                    std::cout<<"shrink_icin_fonk main\n";
+                    vector<string> svec{1'000'000,"necati"};
+
+                    svec.erase(svec.begin()+5,svec.end());
+                    vector<string>{svec}.swap(svec); //swap trick
+                    /* modern c++ ile bunun için shrink_to_fit fonksiyonu eklendi   
+                     */
+                     svec.shrink_to_fit();//bu bağlayıcı değil ve kapasiteyi hemen büzmeyebilir.
+                     //ama genede non-binding shrink request
+                return 0;
+                }
+             
+             }// shrink_icin_fonk sonu
+        } // mutator_functions sonu
+    }
+}

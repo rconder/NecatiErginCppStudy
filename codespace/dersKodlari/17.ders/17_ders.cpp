@@ -260,13 +260,11 @@ namespace tur_donusturme_2
 */
 namespace tur_donusturme_ornek_3
 {
-
     class Counter
     {
         // Basit bir örnek domain içinden
         // bazı avantajları elde etmek için int yerine counter sınıfı yaratmak yerine
         // bu sınıfı kullanılacak
-
     public:
         explicit Counter(int val = 0) : m_c{val} {}
         Counter &operator--() // postfix
