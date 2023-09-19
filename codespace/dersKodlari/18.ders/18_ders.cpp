@@ -69,12 +69,12 @@ namespace namespace_sentaksi_ve_kullanimi
     void func3()
     {
         using ali::x
-            x = 5; //alinin x'i
+        x = 5; //alinin x'i
     }
 
     void foo3()
     {
-        // x = 5;//SENTAKS HATASI bu bir sentaks hatası
+        // x = 5;//SENTAKS HATASI
     }
 
     namespace veli
@@ -86,7 +86,7 @@ namespace namespace_sentaksi_ve_kullanimi
     int main4()
     {
         veli::x = 10;
-        // veli::ali //SENTAKS HATASI sentaks hatası
+        // veli::ali //SENTAKS HATASI
     }
     //========
     int g = 10;
@@ -302,7 +302,6 @@ namespace namespace_sentaksi_ve_kullanimi
         func(ax); // func ismini nitelenmeden kullanmamıza rağmen
         // yine de func ismini unqualified olarak kullanmamız sorun olmadı
         // ADL: isliyor
-        //
     }
 
     int main()

@@ -1,4 +1,43 @@
+# İçindekiler
+[Operator Overloading](#operator-overloading)
+# Operator Overloading
+
+## Aritmetik İşlemlerin Overload Edilmesi
+
+### [Postfix Toplama Operatorü](#postfix-toplama-operatorü)
+### [Prefix Toplama Operatörü](#prefix-toplama-operatörü)
+### [Postfix Çıkartma Operatörü](#postfix-çıkartma-operatörü)
+### [Prefix Çıkartma Operatörü](#prefix-çıkartma-operatörü)
+
+## İşaret Operatörleri + ve -'nin Overload'u
+
+### [Operator+()](#operator)
+### [Operator-()](#operator-1)
+
+## [Operator += Overload Edilmesi](#operator--overload-edilmesi)
+
+## [Giriş & Çıkış İşlemleri için Kullanılan Operatorlerin Overload Edilmesi](#giriş--çıkış-işlemleri-için-kullanılan-operatorlerin-overload-edilmesi)
+
+## [Mantık (Logic) Operatorlerinin Overload Edilmesi](#mantık-logic-operatorlerinin-overload-edilmesi)
+
+## [2 Sınıf Nesnesinin Toplanması ve Çıkarma Operatorunun Overload Edilmesi](#2-sınıf-nesnesinin-toplanması-ve-çıkarma-operatorunun-overload-edilmesi)
+
+## [Köşeli Parantez'in Overload Edilmesi](#köşeli-parantez-un-overload-edilmesi)
+
+## [Ok (->) ve * Operatorlerinin Overload Edilmesi](#ok-ve--operatorlerinin-overload-edilmesi)
+
+## [Operator Parantez (Operator()) Overloading](#operator-parantez-operator-overloading)
+
+## [Tür Dönüştürme Operatorlerinin Overload Edilmesi](#tür-dönüştürme-operatorlerinin-overload-edilmesi)
+
+## [bool Dönüşüm Operatorünün Overload Edilmesi](#bool-dönüşüm-operatorünün-overload-edilmesi)
+
+ [Operator Overloading Kullanım Örnekleri](#operator-overloading-kullanım-örenkleri)
+
+- 
 # Operator overloading
+
+16. ve 17. derslerde bu konu işlendi
 
 Burada bazı operator detayları anlatılmamış olabilir onlar daha önceki derslerde anlatılmıştır. 
 
@@ -269,7 +308,6 @@ private:
 }
 ~~~
 
-Bu sınıfın kullanımı 
 ~~~cpp
 int main()
 {
@@ -291,6 +329,9 @@ int main()
 ~~~
 
 ## Operator Parantez (Operator()) Overloading
+
+Aslında bu operator lambda expressionlar da temel olarak kullanılıyor.
+Fonksiyon sarmalayan sınıflar içinde kullanımı zorunlu gibi bir şey.
 
 ~~~cpp
 #include <iostream>
