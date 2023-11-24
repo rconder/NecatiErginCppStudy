@@ -3,6 +3,7 @@
 Bu repo Necati Hocanın ders notlarını almak için oluşturulmuştur. 2 kişinin ayrı ayrı aldığı notlar vardır.
 
 CansinStyle: Derste anlatılanları md dosyasına not ederek. ( Notların bazıları düzgün olmayabilir.)
+
 MertStyle: Güzel IpadPro'su ile not alarak.
 
 ----
