@@ -9,22 +9,8 @@ MertStyle: Güzel IpadPro'su ile not alarak.
 
 Dosya yapısı:
 
-└── NecatiErginCppStudy
-    ├── Ders_Notlari
-    │   ├── CansinStyle
-    │   │   ├── IleriCPP
-    │   │   │   └── res
-    │   │   ├── Temel_CPP
-    │   │   │   ├── 16_ders
-    │   │   │   └── res
-    │   │   └── Utility
-    │   └── MertStyle
-    │       ├── İleri C++ Kursu
-    │       └── Temel C++ Kursu
-    └── Practice
-        └── Odev
-            ├── CppÖdevleri_17_07_2023_Versiyonu
-            └── necatiErginCppÖdev_eskiVersiyon
+![image](https://github.com/rconder/NecatiErginCppStudy/assets/40635642/da71f069-9657-49cc-a5d4-9d8c35af34a8)
+
 
 ----
 
