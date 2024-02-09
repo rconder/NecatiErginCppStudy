@@ -1,0 +1,3945 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>2&period;Hafta</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension bierner.markdown-preview-github-styles */
+html,
+body,
+.github-markdown-body {
+    padding: 0 !important;
+    max-width: auto !important;
+}
+
+.github-markdown-body {
+    background-color: var(--color-canvas-default);
+    color: var(--color-fg-default);
+}
+
+.github-markdown-body {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100% !important;
+}
+
+.github-markdown-content {
+    padding: 32px !important;
+    max-width: 980px;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+
+.vscode-body.scrollBeyondLastLine {
+    margin-bottom: 0;
+}
+.vscode-body.scrollBeyondLastLine .github-markdown-body {
+    padding-bottom: calc(100vh + 10px) !important;
+}
+
+.github-markdown-body blockquote {
+    background-color: initial;
+}
+
+.github-markdown-body pre {
+    color: initial;
+    border: none;
+}
+
+.github-markdown-body code {
+    color: inherit;
+}
+
+.github-markdown-body pre code {
+    color: initial;
+}
+
+.github-markdown-body code > div {
+    background: none
+}
+
+.github-markdown-body.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.github-markdown-body p,
+.github-markdown-body blockquote,
+.github-markdown-body ul,
+.github-markdown-body ol,
+.github-markdown-body dl,
+.github-markdown-body table,
+.github-markdown-body pre {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+    border-left: 3px solid var(--color-fg-default);
+}
+.github-markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: var(--fgColor-default, var(--color-fg-default));
+  background-color: var(--bgColor-default, var(--color-canvas-default));
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.github-markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.github-markdown-body h1:hover .anchor .octicon-link:before,
+.github-markdown-body h2:hover .anchor .octicon-link:before,
+.github-markdown-body h3:hover .anchor .octicon-link:before,
+.github-markdown-body h4:hover .anchor .octicon-link:before,
+.github-markdown-body h5:hover .anchor .octicon-link:before,
+.github-markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+  mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+.github-markdown-body details,
+.github-markdown-body figcaption,
+.github-markdown-body figure {
+  display: block;
+}
+
+.github-markdown-body summary {
+  display: list-item;
+}
+
+.github-markdown-body [hidden] {
+  display: none !important;
+}
+
+.github-markdown-body a {
+  background-color: transparent;
+  color: var(--fgColor-accent, var(--color-accent-fg));
+  text-decoration: none;
+}
+
+.github-markdown-body abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+.github-markdown-body b,
+.github-markdown-body strong {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body dfn {
+  font-style: italic;
+}
+
+.github-markdown-body h1 {
+  margin: .67em 0;
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+}
+
+.github-markdown-body mark {
+  background-color: var(--bgColor-attention-muted, var(--color-attention-subtle));
+  color: var(--fgColor-default, var(--color-fg-default));
+}
+
+.github-markdown-body small {
+  font-size: 90%;
+}
+
+.github-markdown-body sub,
+.github-markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.github-markdown-body sub {
+  bottom: -0.25em;
+}
+
+.github-markdown-body sup {
+  top: -0.5em;
+}
+
+.github-markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: var(--bgColor-default, var(--color-canvas-default));
+}
+
+.github-markdown-body code,
+.github-markdown-body kbd,
+.github-markdown-body pre,
+.github-markdown-body samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.github-markdown-body figure {
+  margin: 1em 40px;
+}
+
+.github-markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--borderColor-default, var(--color-border-default));
+  border: 0;
+}
+
+.github-markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.github-markdown-body [type=button],
+.github-markdown-body [type=reset],
+.github-markdown-body [type=submit] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+.github-markdown-body [type=checkbox],
+.github-markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.github-markdown-body [type=number]::-webkit-inner-spin-button,
+.github-markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.github-markdown-body [type=search]::-webkit-search-cancel-button,
+.github-markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.github-markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.github-markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+.github-markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.github-markdown-body ::placeholder {
+  color: var(--fgColor-muted, var(--color-fg-subtle));
+  opacity: 1;
+}
+
+.github-markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.github-markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.github-markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.github-markdown-body td,
+.github-markdown-body th {
+  padding: 0;
+}
+
+.github-markdown-body details summary {
+  cursor: pointer;
+}
+
+.github-markdown-body details:not([open])>*:not(summary) {
+  display: none !important;
+}
+
+.github-markdown-body a:focus,
+.github-markdown-body [role=button]:focus,
+.github-markdown-body input[type=radio]:focus,
+.github-markdown-body input[type=checkbox]:focus {
+  outline: 2px solid var(--focus-outlineColor, var(--color-accent-fg));
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.github-markdown-body a:focus:not(:focus-visible),
+.github-markdown-body [role=button]:focus:not(:focus-visible),
+.github-markdown-body input[type=radio]:focus:not(:focus-visible),
+.github-markdown-body input[type=checkbox]:focus:not(:focus-visible) {
+  outline: solid 1px transparent;
+}
+
+.github-markdown-body a:focus-visible,
+.github-markdown-body [role=button]:focus-visible,
+.github-markdown-body input[type=radio]:focus-visible,
+.github-markdown-body input[type=checkbox]:focus-visible {
+  outline: 2px solid var(--focus-outlineColor, var(--color-accent-fg));
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.github-markdown-body a:not([class]):focus,
+.github-markdown-body a:not([class]):focus-visible,
+.github-markdown-body input[type=radio]:focus,
+.github-markdown-body input[type=radio]:focus-visible,
+.github-markdown-body input[type=checkbox]:focus,
+.github-markdown-body input[type=checkbox]:focus-visible {
+  outline-offset: 0;
+}
+
+.github-markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  line-height: 10px;
+  color: var(--fgColor-default, var(--color-fg-default));
+  vertical-align: middle;
+  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+  border: solid 1px var(--borderColor-neutral-muted, var(--color-neutral-muted));
+  border-bottom-color: var(--borderColor-neutral-muted, var(--color-neutral-muted));
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--borderColor-neutral-muted, var(--color-neutral-muted));
+}
+
+.github-markdown-body h1,
+.github-markdown-body h2,
+.github-markdown-body h3,
+.github-markdown-body h4,
+.github-markdown-body h5,
+.github-markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: var(--base-text-weight-semibold, 600);
+  line-height: 1.25;
+}
+
+.github-markdown-body h2 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+}
+
+.github-markdown-body h3 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1.25em;
+}
+
+.github-markdown-body h4 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: 1em;
+}
+
+.github-markdown-body h5 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .875em;
+}
+
+.github-markdown-body h6 {
+  font-weight: var(--base-text-weight-semibold, 600);
+  font-size: .85em;
+  color: var(--fgColor-muted, var(--color-fg-muted));
+}
+
+.github-markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.github-markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--fgColor-muted, var(--color-fg-muted));
+  border-left: .25em solid var(--borderColor-default, var(--color-border-default));
+}
+
+.github-markdown-body ul,
+.github-markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.github-markdown-body ol ol,
+.github-markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.github-markdown-body ul ul ol,
+.github-markdown-body ul ol ol,
+.github-markdown-body ol ul ol,
+.github-markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.github-markdown-body dd {
+  margin-left: 0;
+}
+
+.github-markdown-body tt,
+.github-markdown-body code,
+.github-markdown-body samp {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+}
+
+.github-markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.github-markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.github-markdown-body input::-webkit-outer-spin-button,
+.github-markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.github-markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.github-markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.github-markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.github-markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.github-markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.github-markdown-body .absent {
+  color: var(--fgColor-danger, var(--color-danger-fg));
+}
+
+.github-markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.github-markdown-body .anchor:focus {
+  outline: none;
+}
+
+.github-markdown-body p,
+.github-markdown-body blockquote,
+.github-markdown-body ul,
+.github-markdown-body ol,
+.github-markdown-body dl,
+.github-markdown-body table,
+.github-markdown-body pre,
+.github-markdown-body details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.github-markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.github-markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-body h1 .octicon-link,
+.github-markdown-body h2 .octicon-link,
+.github-markdown-body h3 .octicon-link,
+.github-markdown-body h4 .octicon-link,
+.github-markdown-body h5 .octicon-link,
+.github-markdown-body h6 .octicon-link {
+  color: var(--fgColor-default, var(--color-fg-default));
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.github-markdown-body h1:hover .anchor,
+.github-markdown-body h2:hover .anchor,
+.github-markdown-body h3:hover .anchor,
+.github-markdown-body h4:hover .anchor,
+.github-markdown-body h5:hover .anchor,
+.github-markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.github-markdown-body h1:hover .anchor .octicon-link,
+.github-markdown-body h2:hover .anchor .octicon-link,
+.github-markdown-body h3:hover .anchor .octicon-link,
+.github-markdown-body h4:hover .anchor .octicon-link,
+.github-markdown-body h5:hover .anchor .octicon-link,
+.github-markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.github-markdown-body h1 tt,
+.github-markdown-body h1 code,
+.github-markdown-body h2 tt,
+.github-markdown-body h2 code,
+.github-markdown-body h3 tt,
+.github-markdown-body h3 code,
+.github-markdown-body h4 tt,
+.github-markdown-body h4 code,
+.github-markdown-body h5 tt,
+.github-markdown-body h5 code,
+.github-markdown-body h6 tt,
+.github-markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.github-markdown-body summary h1,
+.github-markdown-body summary h2,
+.github-markdown-body summary h3,
+.github-markdown-body summary h4,
+.github-markdown-body summary h5,
+.github-markdown-body summary h6 {
+  display: inline-block;
+}
+
+.github-markdown-body summary h1 .anchor,
+.github-markdown-body summary h2 .anchor,
+.github-markdown-body summary h3 .anchor,
+.github-markdown-body summary h4 .anchor,
+.github-markdown-body summary h5 .anchor,
+.github-markdown-body summary h6 .anchor {
+  margin-left: -40px;
+}
+
+.github-markdown-body summary h1,
+.github-markdown-body summary h2 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.github-markdown-body ul.no-list,
+.github-markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.github-markdown-body ol[type="a s"] {
+  list-style-type: lower-alpha;
+}
+
+.github-markdown-body ol[type="A s"] {
+  list-style-type: upper-alpha;
+}
+
+.github-markdown-body ol[type="i s"] {
+  list-style-type: lower-roman;
+}
+
+.github-markdown-body ol[type="I s"] {
+  list-style-type: upper-roman;
+}
+
+.github-markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.github-markdown-body div>ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.github-markdown-body ul ul,
+.github-markdown-body ul ol,
+.github-markdown-body ol ol,
+.github-markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.github-markdown-body li>p {
+  margin-top: 16px;
+}
+
+.github-markdown-body li+li {
+  margin-top: .25em;
+}
+
+.github-markdown-body dl {
+  padding: 0;
+}
+
+.github-markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.github-markdown-body table th {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.github-markdown-body table th,
+.github-markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid var(--borderColor-default, var(--color-border-default));
+}
+
+.github-markdown-body table td>:last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-body table tr {
+  background-color: var(--bgColor-default, var(--color-canvas-default));
+  border-top: 1px solid var(--borderColor-muted, var(--color-border-muted));
+}
+
+.github-markdown-body table tr:nth-child(2n) {
+  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+}
+
+.github-markdown-body table img {
+  background-color: transparent;
+}
+
+.github-markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.github-markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.github-markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.github-markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.github-markdown-body span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--borderColor-default, var(--color-border-default));
+}
+
+.github-markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.github-markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--fgColor-default, var(--color-fg-default));
+}
+
+.github-markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-body span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.github-markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.github-markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-body span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.github-markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.github-markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.github-markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.github-markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.github-markdown-body span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.github-markdown-body code,
+.github-markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  white-space: break-spaces;
+  background-color: var(--bgColor-neutral-muted, var(--color-neutral-muted));
+  border-radius: 6px;
+}
+
+.github-markdown-body code br,
+.github-markdown-body tt br {
+  display: none;
+}
+
+.github-markdown-body del code {
+  text-decoration: inherit;
+}
+
+.github-markdown-body samp {
+  font-size: 85%;
+}
+
+.github-markdown-body pre code {
+  font-size: 100%;
+}
+
+.github-markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.github-markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.github-markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.github-markdown-body .highlight pre,
+.github-markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  color: var(--fgColor-default, var(--color-fg-default));
+  background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+  border-radius: 6px;
+}
+
+.github-markdown-body pre code,
+.github-markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.github-markdown-body .csv-data td,
+.github-markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.github-markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--bgColor-default, var(--color-canvas-default));
+  border: 0;
+}
+
+.github-markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.github-markdown-body .csv-data th {
+  font-weight: var(--base-text-weight-semibold, 600);
+  background: var(--bgColor-muted, var(--color-canvas-subtle));
+  border-top: 0;
+}
+
+.github-markdown-body [data-footnote-ref]::before {
+  content: "[";
+}
+
+.github-markdown-body [data-footnote-ref]::after {
+  content: "]";
+}
+
+.github-markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--fgColor-muted, var(--color-fg-muted));
+  border-top: 1px solid var(--borderColor-default, var(--color-border-default));
+}
+
+.github-markdown-body .footnotes ol {
+  padding-left: 16px;
+}
+
+.github-markdown-body .footnotes ol ul {
+  display: inline-block;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.github-markdown-body .footnotes li {
+  position: relative;
+}
+
+.github-markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--borderColor-accent-emphasis, var(--color-accent-emphasis));
+  border-radius: 6px;
+}
+
+.github-markdown-body .footnotes li:target {
+  color: var(--fgColor-default, var(--color-fg-default));
+}
+
+.github-markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.github-markdown-body [popover] {
+  background-color: canvas;
+  border: initial solid;
+  border-color: initial;
+  border-image: initial;
+  color: initial;
+  height: fit-content;
+  inset: 0;
+  margin: auto;
+  overflow: auto;
+  padding: .25em;
+  position: fixed;
+  width: fit-content;
+  z-index: 2147483647;
+}
+
+.github-markdown-body [popover]:not(.\:popover-open) {
+  display: none;
+}
+
+.github-markdown-body [popover]:is(dialog[open]) {
+  display: revert;
+}
+
+.github-markdown-body [anchor].\:popover-open {
+  inset: auto;
+}
+
+.github-markdown-body .pl-c {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.github-markdown-body .pl-c1,
+.github-markdown-body .pl-s .pl-v {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.github-markdown-body .pl-e,
+.github-markdown-body .pl-en {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.github-markdown-body .pl-smi,
+.github-markdown-body .pl-s .pl-s1 {
+  color: var(--color-prettylights-syntax-storage-modifier-import);
+}
+
+.github-markdown-body .pl-ent {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.github-markdown-body .pl-k {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.github-markdown-body .pl-s,
+.github-markdown-body .pl-pds,
+.github-markdown-body .pl-s .pl-pse .pl-s1,
+.github-markdown-body .pl-sr,
+.github-markdown-body .pl-sr .pl-cce,
+.github-markdown-body .pl-sr .pl-sre,
+.github-markdown-body .pl-sr .pl-sra {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.github-markdown-body .pl-v,
+.github-markdown-body .pl-smw {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.github-markdown-body .pl-bu {
+  color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+}
+
+.github-markdown-body .pl-ii {
+  color: var(--color-prettylights-syntax-invalid-illegal-text);
+  background-color: var(--color-prettylights-syntax-invalid-illegal-bg);
+}
+
+.github-markdown-body .pl-c2 {
+  color: var(--color-prettylights-syntax-carriage-return-text);
+  background-color: var(--color-prettylights-syntax-carriage-return-bg);
+}
+
+.github-markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-string-regexp);
+}
+
+.github-markdown-body .pl-ml {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.github-markdown-body .pl-mh,
+.github-markdown-body .pl-mh .pl-en,
+.github-markdown-body .pl-ms {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-heading);
+}
+
+.github-markdown-body .pl-mi {
+  font-style: italic;
+  color: var(--color-prettylights-syntax-markup-italic);
+}
+
+.github-markdown-body .pl-mb {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+
+.github-markdown-body .pl-md {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+.github-markdown-body .pl-mi1 {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.github-markdown-body .pl-mc {
+  color: var(--color-prettylights-syntax-markup-changed-text);
+  background-color: var(--color-prettylights-syntax-markup-changed-bg);
+}
+
+.github-markdown-body .pl-mi2 {
+  color: var(--color-prettylights-syntax-markup-ignored-text);
+  background-color: var(--color-prettylights-syntax-markup-ignored-bg);
+}
+
+.github-markdown-body .pl-mdr {
+  font-weight: bold;
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+
+.github-markdown-body .pl-ba {
+  color: var(--color-prettylights-syntax-brackethighlighter-angle);
+}
+
+.github-markdown-body .pl-sg {
+  color: var(--color-prettylights-syntax-sublimelinter-gutter-mark);
+}
+
+.github-markdown-body .pl-corl {
+  text-decoration: underline;
+  color: var(--color-prettylights-syntax-constant-other-reference-link);
+}
+
+.github-markdown-body g-emoji {
+  display: inline-block;
+  min-width: 1ch;
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: var(--base-text-weight-normal, 400);
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.github-markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.github-markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.github-markdown-body .task-list-item label {
+  font-weight: var(--base-text-weight-normal, 400);
+}
+
+.github-markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.github-markdown-body .task-list-item+.task-list-item {
+  margin-top: 4px;
+}
+
+.github-markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.github-markdown-body .task-list-item-checkbox {
+  margin: 0 .2em .25em -1.4em;
+  vertical-align: middle;
+}
+
+.github-markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.github-markdown-body .contains-task-list {
+  position: relative;
+}
+
+.github-markdown-body .contains-task-list:hover .task-list-item-convert-container,
+.github-markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+  display: block;
+  width: auto;
+  height: 24px;
+  overflow: visible;
+  clip: auto;
+}
+
+.github-markdown-body .QueryBuilder .qb-entity {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.github-markdown-body .QueryBuilder .qb-constant {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.github-markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+[data-color-mode=light][data-light-theme=light],
+[data-color-mode=dark][data-dark-theme=light],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light] {
+  /*light*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #1F2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #d1242f;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_colorblind],
+[data-color-mode=dark][data-dark-theme=light_colorblind],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_colorblind],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_colorblind] {
+  /*light_colorblind*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #b35900;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #8a4600;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6f3800;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #6f3800;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #b35900;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #6f3800;
+  --color-prettylights-syntax-markup-deleted-bg: #fff5e8;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #8a4600;
+  --color-prettylights-syntax-markup-changed-bg: #ffddb0;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #b35900;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_tritanopia],
+[data-color-mode=dark][data-dark-theme=light_tritanopia],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_tritanopia],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_tritanopia] {
+  /*light_tritanopia*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #a40e26;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #0550ae;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-inserted-text: #0550ae;
+  --color-prettylights-syntax-markup-inserted-bg: #ddf4ff;
+  --color-prettylights-syntax-markup-changed-text: #a40e26;
+  --color-prettylights-syntax-markup-changed-bg: #ffcecb;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+}
+}
+
+[data-color-mode=light][data-light-theme=light_high_contrast],
+[data-color-mode=dark][data-dark-theme=light_high_contrast],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=light_high_contrast],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #66707b;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #66707b;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=light_high_contrast] {
+  /*light_high_contrast*/
+  color-scheme: light;
+  --color-prettylights-syntax-comment: #66707b;
+  --color-prettylights-syntax-constant: #023b95;
+  --color-prettylights-syntax-entity: #512598;
+  --color-prettylights-syntax-storage-modifier-import: #0e1116;
+  --color-prettylights-syntax-entity-tag: #024c1a;
+  --color-prettylights-syntax-keyword: #a0111f;
+  --color-prettylights-syntax-string: #032563;
+  --color-prettylights-syntax-variable: #702c00;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #6e011a;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #6e011a;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #a0111f;
+  --color-prettylights-syntax-string-regexp: #024c1a;
+  --color-prettylights-syntax-markup-list: #2e1800;
+  --color-prettylights-syntax-markup-heading: #023b95;
+  --color-prettylights-syntax-markup-italic: #0e1116;
+  --color-prettylights-syntax-markup-bold: #0e1116;
+  --color-prettylights-syntax-markup-deleted-text: #6e011a;
+  --color-prettylights-syntax-markup-deleted-bg: #fff0ee;
+  --color-prettylights-syntax-markup-inserted-text: #024c1a;
+  --color-prettylights-syntax-markup-inserted-bg: #d2fedb;
+  --color-prettylights-syntax-markup-changed-text: #702c00;
+  --color-prettylights-syntax-markup-changed-bg: #ffc67b;
+  --color-prettylights-syntax-markup-ignored-text: #e7ecf0;
+  --color-prettylights-syntax-markup-ignored-bg: #023b95;
+  --color-prettylights-syntax-meta-diff-range: #622cbc;
+  --color-prettylights-syntax-brackethighlighter-angle: #4b535d;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #88929d;
+  --color-prettylights-syntax-constant-other-reference-link: #032563;
+  --color-fg-default: #0e1116;
+  --color-fg-muted: #0e1116;
+  --color-fg-subtle: #66707b;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #e7ecf0;
+  --color-border-default: #20252c;
+  --color-border-muted: #88929d;
+  --color-neutral-muted: rgba(172,182,192,0.2);
+  --color-accent-fg: #0349b4;
+  --color-accent-emphasis: #0349b4;
+  --color-attention-subtle: #fcf7be;
+  --color-danger-fg: #d1242f;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark],
+[data-color-mode=dark][data-dark-theme=dark],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #7d8590;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #7d8590;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark] {
+  /*dark*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #7d8590;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #2f81f7;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_dimmed],
+[data-color-mode=dark][data-dark-theme=dark_dimmed],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_dimmed],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_dimmed] {
+  /*dark_dimmed*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #768390;
+  --color-prettylights-syntax-constant: #6cb6ff;
+  --color-prettylights-syntax-entity: #dcbdfb;
+  --color-prettylights-syntax-storage-modifier-import: #adbac7;
+  --color-prettylights-syntax-entity-tag: #8ddb8c;
+  --color-prettylights-syntax-keyword: #f47067;
+  --color-prettylights-syntax-string: #96d0ff;
+  --color-prettylights-syntax-variable: #f69d50;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #e5534b;
+  --color-prettylights-syntax-invalid-illegal-text: #cdd9e5;
+  --color-prettylights-syntax-invalid-illegal-bg: #922323;
+  --color-prettylights-syntax-carriage-return-text: #cdd9e5;
+  --color-prettylights-syntax-carriage-return-bg: #ad2e2c;
+  --color-prettylights-syntax-string-regexp: #8ddb8c;
+  --color-prettylights-syntax-markup-list: #eac55f;
+  --color-prettylights-syntax-markup-heading: #316dca;
+  --color-prettylights-syntax-markup-italic: #adbac7;
+  --color-prettylights-syntax-markup-bold: #adbac7;
+  --color-prettylights-syntax-markup-deleted-text: #ffd8d3;
+  --color-prettylights-syntax-markup-deleted-bg: #78191b;
+  --color-prettylights-syntax-markup-inserted-text: #b4f1b4;
+  --color-prettylights-syntax-markup-inserted-bg: #1b4721;
+  --color-prettylights-syntax-markup-changed-text: #ffddb0;
+  --color-prettylights-syntax-markup-changed-bg: #682d0f;
+  --color-prettylights-syntax-markup-ignored-text: #adbac7;
+  --color-prettylights-syntax-markup-ignored-bg: #255ab2;
+  --color-prettylights-syntax-meta-diff-range: #dcbdfb;
+  --color-prettylights-syntax-brackethighlighter-angle: #768390;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #545d68;
+  --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
+  --color-fg-default: #adbac7;
+  --color-fg-muted: #768390;
+  --color-fg-subtle: #636e7b;
+  --color-canvas-default: #22272e;
+  --color-canvas-subtle: #2d333b;
+  --color-border-default: #444c56;
+  --color-border-muted: #373e47;
+  --color-neutral-muted: rgba(99,110,123,0.4);
+  --color-accent-fg: #539bf5;
+  --color-accent-emphasis: #316dca;
+  --color-attention-subtle: rgba(174,124,20,0.15);
+  --color-danger-fg: #e5534b;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_colorblind],
+[data-color-mode=dark][data-dark-theme=dark_colorblind],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_colorblind],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_colorblind] {
+  /*dark_colorblind*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ec8e2c;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #fdac54;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #d47616;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #6c3906;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #914d04;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffe2bb;
+  --color-prettylights-syntax-markup-deleted-bg: #4e2906;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffe2bb;
+  --color-prettylights-syntax-markup-changed-bg: #4e2906;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #d47616;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_tritanopia],
+[data-color-mode=dark][data-dark-theme=dark_tritanopia],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_tritanopia],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_tritanopia] {
+  /*dark_tritanopia*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #a5d6ff;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa198;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #a5d6ff;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #cae8ff;
+  --color-prettylights-syntax-markup-inserted-bg: #0c2d6b;
+  --color-prettylights-syntax-markup-changed-text: #ffdcd7;
+  --color-prettylights-syntax-markup-changed-bg: #67060c;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7681;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+}
+
+[data-color-mode=light][data-light-theme=dark_high_contrast],
+[data-color-mode=dark][data-dark-theme=dark_high_contrast],
+.vscode-body.vscode-light [data-color-mode=auto][data-light-theme=dark_high_contrast],
+.vscode-body.vscode-dark [data-color-mode=auto][data-dark-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+}
+@media (prefers-color-scheme: light) {
+  [data-color-mode='system'][data-light-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode='system'][data-dark-theme=dark_high_contrast] {
+  /*dark_high_contrast*/
+  color-scheme: dark;
+  --color-prettylights-syntax-comment: #bdc4cc;
+  --color-prettylights-syntax-constant: #91cbff;
+  --color-prettylights-syntax-entity: #dbb7ff;
+  --color-prettylights-syntax-storage-modifier-import: #f0f3f6;
+  --color-prettylights-syntax-entity-tag: #72f088;
+  --color-prettylights-syntax-keyword: #ff9492;
+  --color-prettylights-syntax-string: #addcff;
+  --color-prettylights-syntax-variable: #ffb757;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #ff6a69;
+  --color-prettylights-syntax-invalid-illegal-text: #ffffff;
+  --color-prettylights-syntax-invalid-illegal-bg: #e82a2f;
+  --color-prettylights-syntax-carriage-return-text: #ffffff;
+  --color-prettylights-syntax-carriage-return-bg: #ff4445;
+  --color-prettylights-syntax-string-regexp: #72f088;
+  --color-prettylights-syntax-markup-list: #fbd669;
+  --color-prettylights-syntax-markup-heading: #409eff;
+  --color-prettylights-syntax-markup-italic: #f0f3f6;
+  --color-prettylights-syntax-markup-bold: #f0f3f6;
+  --color-prettylights-syntax-markup-deleted-text: #ffdedb;
+  --color-prettylights-syntax-markup-deleted-bg: #cc1421;
+  --color-prettylights-syntax-markup-inserted-text: #acf7b6;
+  --color-prettylights-syntax-markup-inserted-bg: #007728;
+  --color-prettylights-syntax-markup-changed-text: #ffe1b4;
+  --color-prettylights-syntax-markup-changed-bg: #a74c00;
+  --color-prettylights-syntax-markup-ignored-text: #f0f3f6;
+  --color-prettylights-syntax-markup-ignored-bg: #318bf8;
+  --color-prettylights-syntax-meta-diff-range: #dbb7ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #bdc4cc;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7a828e;
+  --color-prettylights-syntax-constant-other-reference-link: #addcff;
+  --color-fg-default: #f0f3f6;
+  --color-fg-muted: #f0f3f6;
+  --color-fg-subtle: #9ea7b3;
+  --color-canvas-default: #0a0c10;
+  --color-canvas-subtle: #272b33;
+  --color-border-default: #7a828e;
+  --color-border-muted: #7a828e;
+  --color-neutral-muted: rgba(158,167,179,0.4);
+  --color-accent-fg: #71b7ff;
+  --color-accent-emphasis: #409eff;
+  --color-attention-subtle: rgba(224,155,19,0.15);
+  --color-danger-fg: #ff6a69;
+}
+}
+
+/*!
+  Theme: GitHub
+  Description: Highlight-js port of github.com theme
+  Author: github.com
+  Maintainer: @SNDST00M, @mjbvz
+  Updated: 2021-12-08
+*/
+.markdown-body pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+.markdown-body code.hljs {
+  padding: 3px 5px;
+}
+
+/*!
+  Theme: GitHub
+  Description: Theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+*/
+.markdown-body .hljs {
+  color: var(--color-fg-default);
+  background: var(--color-canvas-subtle);
+}
+
+.markdown-body .hljs-doctag,
+.markdown-body .hljs-keyword,
+.markdown-body .hljs-meta .hljs-keyword,
+.markdown-body .hljs-template-tag,
+.markdown-body .hljs-template-variable,
+.markdown-body .hljs-type,
+.markdown-body .hljs-variable.language_ {
+  color: var(--color-prettylights-syntax-keyword);
+}
+
+.markdown-body .hljs-title,
+.markdown-body .hljs-title.class_,
+.markdown-body .hljs-title.class_.inherited__,
+.markdown-body .hljs-title.function_ {
+  color: var(--color-prettylights-syntax-entity);
+}
+
+.markdown-body .hljs-attr,
+.markdown-body .hljs-attribute,
+.markdown-body .hljs-literal,
+.markdown-body .hljs-meta,
+.markdown-body .hljs-number,
+.markdown-body .hljs-operator,
+.markdown-body .hljs-selector-attr,
+.markdown-body .hljs-selector-class,
+.markdown-body .hljs-selector-id,
+.markdown-body .hljs-variable {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .hljs-meta .hljs-string,
+.markdown-body .hljs-regexp,
+.markdown-body .hljs-string {
+  color: var(--color-prettylights-syntax-string);
+}
+
+.markdown-body .hljs-built_in,
+.markdown-body .hljs-symbol {
+  color: var(--color-prettylights-syntax-variable);
+}
+
+.markdown-body .hljs-code,
+.markdown-body .hljs-comment,
+.markdown-body .hljs-formula {
+  color: var(--color-prettylights-syntax-comment);
+}
+
+.markdown-body .hljs-name,
+.markdown-body .hljs-quote,
+.markdown-body .hljs-selector-pseudo,
+.markdown-body .hljs-selector-tag {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+
+.markdown-body .hljs-subst {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .hljs-section {
+  color: var(--color-prettylights-syntax-markup-heading);
+  font-weight: bold;
+}
+
+.markdown-body .hljs-bullet {
+  color: var(--color-prettylights-syntax-markup-list);
+}
+
+.markdown-body .hljs-emphasis {
+  color: var(--color-prettylights-syntax-constant);
+  font-style: italic;
+}
+
+.markdown-body .hljs-strong {
+  color: var(--color-prettylights-syntax-constant);
+  font-weight: bold;
+}
+
+.markdown-body .hljs-addition {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.markdown-body .hljs-deletion {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <div
+            class="github-markdown-body"
+            data-color-mode="auto"
+            data-light-theme="light"
+            data-dark-theme="dark"
+        >
+            <div class="github-markdown-content"><h1 id="2hafta">2.Hafta</h1>
+<ul>
+<li><a href="#2hafta">2.Hafta</a>
+<ul>
+<li><a href="#copy-elision">Copy Elision</a>
+<ul>
+<li><a href="#mandatory-copy-elision">Mandatory Copy Elision</a>
+<ul>
+<li><a href="#unmaterailized-object-passing">Unmaterailized Object Passing</a></li>
+<li><a href="#unrvo-i%CC%87simlendirilmemi%C5%9F-bir-nesnenin-geri-d%C3%B6n%C3%BC%C5%9F-objesi-olarak-kullan%C4%B1lmas%C4%B1">UNRVO (İsimlendirilmemiş bir nesnenin geri dönüş objesi olarak kullanılması)</a></li>
+</ul>
+</li>
+<li><a href="#nrvo-">NRVO ()</a></li>
+<li><a href="#copy-elision-yap%C4%B1lamad%C4%B1%C4%9F%C4%B1-senaryolar">Copy-Elision Yapılamadığı senaryolar</a></li>
+</ul>
+</li>
+<li><a href="#move-semantics">Move Semantics</a></li>
+<li><a href="#constructorda-move-ve-copy">Constructor'da Move ve Copy</a>
+<ul>
+<li><a href="#ta%C5%9F%C4%B1ma-semanti%C4%9Fi-ve-no-except-i%CC%87li%C5%9Fkisi">Taşıma semantiği ve No except İlişkisi</a>
+<ul>
+<li><a href="#noexcept-tekrar%C4%B1">noexcept tekrarı</a>
+<ul>
+<li><a href="#exception-garantileri">Exception Garantileri</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#moved-from-state">Moved From State</a>
+<ul>
+<li><a href="#invariant">Invariant</a>
+<ul>
+<li><a href="#invariantlar-neden-bozulur">Invariantlar Neden Bozulur?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#move-semantics-with-generic-programming">Move Semantics With Generic Programming</a>
+<ul>
+<li><a href="#perfect-forwarding-universal-referans">Perfect Forwarding (Universal Referans)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>3.ders başlangıcı</p>
+</blockquote>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-type">int</span> *p{}; <span class="hljs-comment">//değişkenin türü int *</span>
+    p; <span class="hljs-comment">//ifadenin türü int *</span>
+    <span class="hljs-type">int</span> &amp;&amp; r = <span class="hljs-number">10</span>; <span class="hljs-comment">//değişkenin türü int ref ref</span>
+    r;<span class="hljs-comment">//ifadenin türü ise int. </span>
+}
+</code></pre>
+<h2 id="copy-elision">Copy Elision</h2>
+<p>Kopyalamanın yapılmaması demek, verimlilik açısından çok önemli, çünkü kopyalama çok pahalı bir işlem, eğer programın logic açıdan bir değişiklik yaratmadan kopyalamayı yapmama şansımız var ise kopyalamadan kaçınarak maliyet kazanıyoruz.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/tablo_special_mem.png" alt="Alt text"></p>
+<p>Kopyalama yerine taşınma yapılmasından değil, ne copy ne de move yapılması <strong>kast edilmiyor</strong>. Bazı sınıflar için çünkü bu durumun maliyeti aynı olabilir.</p>
+<p>Eğer bir nesne hayata getirilmiyorsa, bir copy-elision'dan bahsetmemiz mümkün. Tüm senaryolarda bir nesneye taşıma veya kopyalama yapmak yerine var olan bir nesne olarak onun hayatını devam ettiriyoruz.</p>
+<pre><code class="language-c++">
+x = y; <span class="hljs-comment">//burada bir copy-elision&#x27;dan bahsedemeyiz.</span>
+
+veconstructor &lt;string&gt; x,y;
+
+x = y; <span class="hljs-comment">//burada copy assignment çalışırken</span>
+
+x= std::<span class="hljs-built_in">move</span>(y); <span class="hljs-comment">//burada ise move assignment çalışır.</span>
+<span class="hljs-comment">//fakat burada copy-elision&#x27;dan bahsedemeyiz.</span>
+</code></pre>
+<p>Bir nesneği hayata getirirken</p>
+<ul>
+<li>copy-constructor</li>
+<li>move-constructor kullanabiliriz.</li>
+<li>Onu initialize eden değere bağlı olarak, default veya parametreli constructor ile hayata gelebilir.</li>
+</ul>
+<p>Nerelerde karşımıza çıkıyor.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/whereitoccurs.png" alt="Alt text"></p>
+<blockquote>
+<p>Throw ifadeleri exception objelereine ilk değer veriliyor.</p>
+</blockquote>
+<pre><code class="language-c++">MyException ex;
+
+<span class="hljs-keyword">throw</span> ex; <span class="hljs-comment">//derleyiciye exception object&#x27;e ex ifadesi ile ilkk değer veriyoruz ve burada copy-elision söz konusu olabilir.</span>
+</code></pre>
+<p>C++17 ile bazı durumlar <em>mandatory</em> hale getirildi fakat, bu senaryolarda zaten bir kopyalama yok. C++17 ile artık PR-val expression tanımı değişti ve artık PR-val bir nesneye ilk değer vermeye yönelik bir reçete ve burada ne zamanki bir nesne oluşturuluyor, temproray metarlization ile bir nesne oluşuyor. Bu gerçekleşmediği sürece bir nesnenin hayata gelmesi mümkün değil.</p>
+<p>Mandatory copy-elision sınıfın copy ve move construconstructorlarının olmasına gerek yok, eğer bu zorunlu bir şey olmasaydı ve copy ve move construconstructorları olmasaydı derleyiciler burada copy-elision yapamıyordu.</p>
+<p>Mandatory'nin optimizasyon olması ile</p>
+<ul>
+<li>Çağrılarbilir move ve copy olmadan derlenebiliyor</li>
+<li>Debug modunda çalışması ve üretilen kod farklı olabilirdi. Logic aynı olsa bile.</li>
+</ul>
+<hr>
+<blockquote>
+<p>Örneklerde kullanılacak myclass sinifi:</p>
+</blockquote>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/myclass_sinifi.png" alt="Alt text"></p>
+<hr>
+<h3 id="mandatory-copy-elision">Mandatory Copy Elision</h3>
+<p>C++17 itibari ile PR-value expression tanımı değişti bu bir nesneye ilk değer vermeye yönelik bir reçete, temprorary materilization ile bir nesne oluşuyor. Pr-value to X value ile bir materilization gerçekleşiyor.</p>
+<p><code>Myclass m = Myclass {Myclass {Myclass {}}};</code></p>
+<p>Burada derleyici bir optimizasyon yapmasa: <em>default-&gt;copy-&gt;copy</em> construconstructor oluşturabilirdi. Artık burada result object'ini bulana kadar nesne oluşturulmuyor. Bir sentaks hatası yok ve sadece 1 kez default constructor çağırılıyor. Bu bir optimizasyon değil, bir zorunluluk.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Myclass)</span></span>{}
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">foo</span>(Myclass{}); <span class="hljs-comment">// Unmaterailized Object Passing</span>
+}
+</code></pre>
+<p>Bu senaryoda da kopyalama yok ve sadece 1 kez default constructor çağırılıcak. Eğer burada copy/move constructor delete edilmiş olsa bile kopyalama olmayacak.</p>
+<ul>
+<li>Mandator copy elision tek copy elision çeşidi değil.</li>
+</ul>
+<h4 id="unmaterailized-object-passing">Unmaterailized Object Passing</h4>
+<p>İsimlendirilmemiş bir nesne kullanmak daha verimli kod oluşturmaya katkı yapma ihtimali var. Örneğin,</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass m;
+    <span class="hljs-built_in">foo</span>(m);
+    <span class="hljs-built_in">foo</span>(std::<span class="hljs-built_in">move</span>(m));
+}
+</code></pre>
+<p>Olarak yazsaydık, kopyalama yapılacaktır. Artık bu kodda copy constructor çağırılıyor. Eğer nesne sadece fonksiyona bir argüman olarak geçmekse isimlendirilmeden kullanılan nesne verim ve maliyete yarar sağlayabilir.</p>
+<blockquote>
+<p>İstisnai durumlar olabilir. Örneğin kodun okunması ve test edilmesi çok zor ise.</p>
+</blockquote>
+<h4 id="unrvo-i̇simlendirilmemiş-bir-nesnenin-geri-dönüş-objesi-olarak-kullanılması">UNRVO (İsimlendirilmemiş bir nesnenin geri dönüş objesi olarak kullanılması)</h4>
+<pre><code class="language-c++"><span class="hljs-function">Myclass <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span></span>{    <span class="hljs-keyword">return</span> Myclass{x};}
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{    <span class="hljs-keyword">auto</span> m = <span class="hljs-built_in">foo</span>(<span class="hljs-number">123</span>);}
+</code></pre>
+<p>Burada copy-elision olması zorunlu. Bu çok önemli bir garanti, kopyalama ve taşınamayan nesneler olsa dahi burada fabrika fonksiyonlarını yazabiliyoruz.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/template_copy_elision.png" alt="Alt text"></p>
+<p>İfadenin değeri <strong>kullanılmasa</strong>(discard edilse) dahi temprorary metarilization gerçekleşicek.</p>
+<p>Temproray materailization örnekleri.</p>
+<p><code>const myclass &amp; r = myclass{};</code>
+<code>myclass &amp;&amp; r = myclass{};</code>
+<code>auto val = myclass{}.foo();</code> Eğer ortada bir nesne yoksa onun fonksiyonunu çağıramayız.</p>
+<ul>
+<li>Return value optimization ve mandatory.</li>
+</ul>
+<h3 id="nrvo-">NRVO ()</h3>
+<ul>
+<li>Mandatory değil ve derleyici optimizasyon yapıyor. Optimizasyonun yapılması için special member functionların olması gerekiyor.</li>
+</ul>
+<p>Derleyicinin optimizasyon yapması dokümante edilmiş olsa dahi, move ve copy constructor'un olması gerekli.</p>
+<p>Derleyicilerin yetenekleri burada birbirinden farklı. <em>clang</em> derleyicisinin yapabildiği senaryolarda gcc bile yapamıyorlar.</p>
+<p>Bu örnek için tüm derleyiciler için copy elision optimizasyonu yapılıyor. Bu kodun çalışması için copy/move constructor'unun olması lazım.</p>
+<pre><code class="language-c++"><span class="hljs-function">Myclass <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>{    
+    Myclass m;    
+    <span class="hljs-comment">//other code.</span>
+    <span class="hljs-comment">//m.foo();</span>
+    <span class="hljs-comment">//m.bar();</span>
+    <span class="hljs-comment">//m.baz(); gibi fonksiyonların olmasıda bu optimizasyonun yapılmasına engel olmayabilir.</span>
+    <span class="hljs-keyword">return</span> m;
+}
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass mx = <span class="hljs-built_in">foo</span>();
+}
+</code></pre>
+<blockquote>
+<p>otomatik ömürlü nesneler move eligible olduğu zaman move constructor devreye giriyor olabilir.</p>
+</blockquote>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/goruntu.png" alt="Alt text"></p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/goruntu-1.png" alt="Alt text"></p>
+<blockquote>
+<p>Ekstrem bir neden yoksa move constructor no-except taşımalı.</p>
+</blockquote>
+<ul>
+<li>Eğer burada copy-constructor bir yan etkiye sahip ise,<strong>as-if</strong>'in çiğnendiği bir yer, eğer burada copy-constructor/move-constructor çağırıldığında optimizasyon yapılmayacağı üzerine kurararsak o <strong>yan etki gerçekleşmeyecek!!!</strong></li>
+</ul>
+<blockquote>
+<p><strong>as-if rule</strong> Derleyici programın çıkışına etki etmediği sürece istediği optimizasyonu yapabilir. Copy-elision optimizasyonu burada bu etkiyi yok edicek.</p>
+</blockquote>
+<pre><code class="language-c++"><span class="hljs-function">Myclass <span class="hljs-title">foo</span><span class="hljs-params">()</span>
+</span>{
+    Myclass x{};
+    <span class="hljs-comment">///</span>
+    <span class="hljs-keyword">return</span> x;
+}
+</code></pre>
+<p>Eskiden bu optimizasyonu yapabilmek için <strong>out-parameter</strong> kullanılıyordu onun yerine artık doğrudan return parametre kullanılıyor. Çok sınırlı olarak out-value bu iş için kullanılsa dahi. Sıradışı senaryolar hariç burada copy-elision olucak ya da move-semantics devreye giriyor.</p>
+<p><code>void foo(Myclass&amp;)</code> yerine <code>Myclass foo()</code>. Artık semantik açıdanda pratik olarak kullanabiliyoruz.</p>
+<h3 id="copy-elision-yapılamadığı-senaryolar">Copy-Elision Yapılamadığı senaryolar</h3>
+<p>Bunların bir kısmı derleyiciye bağlı olabilir, fakat bazı durumlar için bu derleyiciden bağımsız olarak mümkün olmuyor. Parametre değişkeninin return parametresi olması.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/goruntu-2.png" alt="Alt text"></p>
+<ul>
+<li>Nec isimli bir sınıf ve func isimli bir fonksiyonumuz var. Burada Nec parametresinin değeri belli ve bu durumda name return value optimization gerçekleşmiyor.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function">Nec <span class="hljs-title">func</span><span class="hljs-params">(Nec x)</span></span>{    <span class="hljs-comment">//use x;</span>
+    <span class="hljs-keyword">return</span> x;}
+</code></pre>
+<p>Bir diğer durum döndürülen nesnenin bir koşula bağlı olması lazım.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/image.png" alt="Alt text"></p>
+<p>f1 fonksiyonu, 2. ve 3. operandları ayrı iki nesne olduğu için burada doğrudan copy-constructor çağırılıyor.</p>
+<p>f2 fonksiyonunda bir yerel değişken tanımlanmış ve x'in değeri 10'dan büyükse return objesinde temprorary var, derleyici burada copy-elision gerçekleştirilebiliyor.</p>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/kodlar/image-1.png" alt="Alt text"></p>
+<p>f3 fonksiyonunda ki optimizasyon derleyiciye bağlı.</p>
+<ul>
+<li>Return ifadesinde move kullanma fakat bunun istisnası olan bir yer f1,fonksiyonu.</li>
+</ul>
+<p>Eğer kalıtım bir söz konusu ise, oradada RVU yapma şansı kalmıyor.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">force_rvo</span>
+{
+<span class="hljs-keyword">public</span>:
+    force_rvo(<span class="hljs-type">int</span>)
+    {
+        std::cout &lt;&lt; <span class="hljs-string">&quot;force_rvo(int)\n&quot;</span>;
+    }
+    force_rvo(<span class="hljs-type">const</span> force_rvo &amp;);
+    force_rvo(force_rvo &amp;&amp;);
+};
+
+<span class="hljs-function">force_rvo <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>{}
+</code></pre>
+<p>Burada eğer linked hatası alınırsa return value optiimization yapılmadığını gösteriyor.</p>
+<blockquote>
+<p>Copy-elision bizim için en iyi seçenek, eğer bu mümkün değilse ve taşıma ya da kopyalamadan biri yapılacaksa maliyet olarak move semantics seçiebilir olan.</p>
+</blockquote>
+<h2 id="move-semantics">Move Semantics</h2>
+<p>Artık kullanılmayacak bir nesne söz konusu olduğunda o nesneyi başka bir nesneye kopyalamak yerine o nesenin kaynağını başka bir nesneye aktarmak.</p>
+<ul>
+<li>Move constructor ve assignment bazı durumlarda derleyici tarafından yazılıyor, eğer bunlar bizim beklediğimiz gibi yazılıyorsa bırakın olsun.</li>
+<li>Eğer sınıfın veri elemanı bir handle değilse, derleyicinin yazdığı move ve copy constructor mükemmlel bir şekilde işimizi görür.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>
+{
+<span class="hljs-keyword">public</span>:
+
+<span class="hljs-comment">//derleyicinin yazacağı copy ve move constructor</span>
+    <span class="hljs-built_in">Myclass</span>(<span class="hljs-type">const</span> Myclass&amp; other): <span class="hljs-built_in">m_vec</span>(other.m_vec), <span class="hljs-built_in">m_str</span>(other.m_str){}
+    <span class="hljs-built_in">Myclass</span>(Myclass&amp;&amp; other): <span class="hljs-built_in">m_vec</span>(std::<span class="hljs-built_in">move</span>(other.m_vec)), <span class="hljs-built_in">m_str</span>(std::<span class="hljs-built_in">move</span>(other.m_str)){}
+<span class="hljs-comment">//assignment ise</span>
+    Myclass&amp; <span class="hljs-keyword">operator</span>=(<span class="hljs-type">const</span> Myclass&amp; other)
+    {
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span> == &amp;other)
+            <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;
+        m_vec = other.m_vec;
+        m_str = other.m_str;
+        <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;
+    }
+    Myclass&amp; <span class="hljs-keyword">operator</span>=(Myclass&amp;&amp; other)
+    {
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span> == &amp;other)
+            <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;
+        m_vec = std::<span class="hljs-built_in">move</span>(other.m_vec);
+        m_str = std::<span class="hljs-built_in">move</span>(other.m_str);
+        <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;
+    }
+<span class="hljs-keyword">private</span>:
+    std::vector&lt;<span class="hljs-type">int</span>&gt; m_vec;
+    std::string m_str;
+};
+</code></pre>
+<p>Yukarıdaki dilin kuralı ve bunun bu şekilde</p>
+<blockquote>
+<p>Ideali Rule-of-zero: Derleyicinin özel üye fonksiyonlarını yazması</p>
+</blockquote>
+<p>Eğer bu fonksiyonların değişmesi gibi bir gereklililk varsa resource handle olması dışında, derleyicinin oluşturduğu kodun moved-from state'teki nesnelerin invariantlarını bozuyor olması ve bu moved-from state için belli garantileri vermek istiyorsak ve derleyici bizim istediğimiz durumu oluşturmasını istiyorsak kodu programcının yazması. Burada bir önlem almamız gerekiyor. Standart kütüphanede de bunun örnekleri var.</p>
+<p>Derleyici bir fonksiyonun geri dönüş değerine göre copy yerine move assignment yada constructor'ı çağırabilirdi.</p>
+<p>Normalde bizim move constructor için bunaa müdahale etmemiz gerekmiyor. Örneğin:</p>
+<ul>
+<li>Bir fonksiyonun geri dönüş değerini <code>const</code> yapmak, derleyicinin move-constructor'u çağırmasını engelliyor</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">const</span> Myclass <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span>
+</span>{
+    <span class="hljs-function">Myclass <span class="hljs-title">m</span><span class="hljs-params">(x)</span></span>;
+    <span class="hljs-keyword">return</span> m;
+}
+
+<span class="hljs-function">Myclass <span class="hljs-title">foo1</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span>
+</span>{
+    <span class="hljs-function">Myclass <span class="hljs-title">m</span><span class="hljs-params">(x)</span></span>;
+    <span class="hljs-keyword">return</span> m;
+}
+
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass mx;
+    mx = <span class="hljs-built_in">foo</span>(<span class="hljs-number">23</span>); <span class="hljs-comment">//copy assignment çağırılıyor.</span>
+    mx = <span class="hljs-built_in">foo1</span>(<span class="hljs-number">45</span>); <span class="hljs-comment">//move assignment çağırılıyor.</span>
+}
+</code></pre>
+<ul>
+<li>std::move(), çağırma çünkü bu derleyicinin optimizasyon yapmasını engelleniyor ve copy-elision engelleniyor. Pessimistic move deniyor, otomatik ömürlü nesnelerde zaten move constructor çağırılmasına bir engel yok. Derleyici bu durumda
+optimizasyon yapamıyor ve burada copy-ellision yapılamıoyr ve move constructor çağırılıyor.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function">Myclass <span class="hljs-title">foo</span><span class="hljs-params">()</span>
+</span>{
+    Myclass x;
+    <span class="hljs-comment">//other code</span>
+    <span class="hljs-keyword">return</span> std::<span class="hljs-built_in">move</span>(x);
+}
+</code></pre>
+<p>Fonksiyonun geri dönüş değerini bunu gerektirecek bir durum olmadığı sürece yapma.</p>
+<p>Koda müdahale etmemiz gereken bir yer, kopyalama işlemi yapılacakken bilerek ve istiyerek bu nesenin kaynağını başka bir nesneye aktarmak istiyorsak.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass m{<span class="hljs-number">24</span>};
+    Myclass x = std::<span class="hljs-built_in">move</span>(m); <span class="hljs-comment">//veya static-cast ile</span>
+}
+</code></pre>
+<h2 id="constructorda-move-ve-copy">Constructor'da Move ve Copy</h2>
+<p>Sınıfların constructor'ını yazarken çoğunlukla, constructor'a gelen argüman ile sınıfın veri elemanlarını initialize ediyoruz. Bu durumda move constructor'ı yazmamıza gerek yok.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">using</span> svec = std::vector&lt;std::string&gt;;
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Nec</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Nec</span>(Myclass x):<span class="hljs-built_in">mx</span>(std::<span class="hljs-built_in">move</span>(x)){}
+<span class="hljs-keyword">private</span>:
+    Myclass mx;
+};
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-function">Nec <span class="hljs-title">myec</span><span class="hljs-params">(Myclass{<span class="hljs-number">12</span>})</span></span>;
+    Myclass m;
+    <span class="hljs-function">Nec <span class="hljs-title">mynec1</span><span class="hljs-params">(m)</span></span>; <span class="hljs-comment">//copy constructor + move constructor</span>
+    <span class="hljs-function">Nec <span class="hljs-title">mynec2</span><span class="hljs-params">(std::move(m))</span></span>; <span class="hljs-comment">//move constructor + move constructor</span>
+}
+</code></pre>
+<p>Bu durumda programcının seçeneklerden hangisi uygunsa onun seçilmesi daha iyi ve burada duruma göre uygunluğa göre karar vermek. Seçeneklerin ne olduğunu bilmek lazım:</p>
+<ol>
+<li>Clasic versiyon: fonkyonun parametresini const yapmak, burada bu ekstra bir maliyet getirebilir.</li>
+<li>Tek bir fonksiyon yapmak ve değeri atarken std::move yapılarak kullanılması <code>Nec(Myclass x): mx(std::move(x)){}</code> şeklinde.</li>
+<li><code>Nec(const Myclass&amp; m);</code> ve <code>Nec(Myclass&amp;&amp;x)</code> şeklinde 2 farklı constructor ile taşıma ve kopyalama işlemlerini ayırmak.</li>
+</ol>
+<p>Parametre sayısı artarsa bunun bakımı için daha fazla parametre yazmak gerekiyor. Burada kesin bir cevap yok ve duruma göre karar vermek gerekiyor.</p>
+<p>Taşıma semantiğinden faydalanmak için böyel bir yol izlenebilir.</p>
+<p>Eğer parametre sayısı fazlalaşırsa, bu bir problem olabilir.</p>
+<h3 id="taşıma-semantiği-ve-no-except-i̇lişkisi">Taşıma semantiği ve No except İlişkisi</h3>
+<h4 id="noexcept-tekrarı">noexcept tekrarı</h4>
+<p>Modern C++ ile dile eklendi.</p>
+<blockquote>
+<p><em>Exception specification</em> sentaksı modern c++ ile dilden kaldırıldı.</p>
+</blockquote>
+<pre><code class="language-c++"><span class="hljs-built_in">foo</span>(); <span class="hljs-comment">//exception throw edebilir noexcept(false)</span>
+<span class="hljs-built_in">foo</span>()<span class="hljs-keyword">noexcept</span>;<span class="hljs-comment">//exception throw etmez noexcept(true)</span>
+<span class="hljs-built_in">foo</span>()<span class="hljs-built_in">noexcept</span>(logic);<span class="hljs-comment">//eğer logic true ise exception throw edebilir.</span>
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span><span class="hljs-title">noexcept</span><span class="hljs-params">(<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>) == <span class="hljs-number">4</span>)</span></span>;
+</code></pre>
+<p>Kullanım amacı daha çok generic kodlar içerisinde verilen türüne bağlı olarak exception throw edip/etmeme garantisini vermek için kullanılıyor. Artık fonksiyonun imzasının bir parçası fakat <strong>function overloading'te</strong> kullanılamıyor.</p>
+<pre><code class="language-cpp"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span>&gt; T
+<span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(T)</span><span class="hljs-title">noexcept</span><span class="hljs-params">(std::is_nothrow_constructible_v&lt;T&gt;)</span></span>; <span class="hljs-comment">//burada noexcept(true) veya noexcept(false) olması T&#x27;türünün constructor&#x27;ının noexcept olup olmamasına bağlı.</span>
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(T x )</span><span class="hljs-title">noexcept</span><span class="hljs-params">(<span class="hljs-keyword">noexcept</span>( x + x))</span></span>; <span class="hljs-comment">//ya da bu ifadenin yürütülmesi durumunda bir exception olup olmamasına bağlı.</span>
+</code></pre>
+<ul>
+<li>Fonksiyon pointerları ile de alakalı</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">int</span>)</span><span class="hljs-keyword">noexcept</span></span>;
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">void</span> (*fp)(<span class="hljs-type">int</span>) = foo;
+    <span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">auto</span> b = <span class="hljs-built_in">noexcept</span>(<span class="hljs-built_in">fp</span>(<span class="hljs-number">12</span>)); <span class="hljs-comment">//b&#x27;nin false oluyor.</span>
+    <span class="hljs-built_in">void</span> (*fp1)(<span class="hljs-type">int</span>)<span class="hljs-keyword">noexcept</span> = foo;
+    <span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">auto</span> a = <span class="hljs-built_in">noexcept</span>(<span class="hljs-built_in">fp1</span>(<span class="hljs-number">12</span>)); <span class="hljs-comment">//a&#x27;nın değeri true oluyor</span>
+}
+</code></pre>
+<ul>
+<li>typededuction ile</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">int</span>)</span><span class="hljs-keyword">noexcept</span></span>;
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">auto</span> f = foo;
+    <span class="hljs-keyword">constexpr</span> <span class="hljs-keyword">auto</span> b = <span class="hljs-built_in">noexcept</span>(<span class="hljs-built_in">fp</span>(<span class="hljs-number">12</span>)); <span class="hljs-comment">//b&#x27;nin değeri true oluyor.</span>
+    <span class="hljs-comment">//ve bu durumda auto f çıkarımının noexcept ile yapıldığını anlıyoruz.</span>
+}
+</code></pre>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span>;<span class="hljs-comment">//Exception throw edebiliyor. Bu interface&#x27;i kullananlar exception throw etme ihtimalini göz önüne almamlılar.</span>
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span><span class="hljs-keyword">noexcept</span></span>;
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">bar</span><span class="hljs-params">()</span><span class="hljs-title">noexcept</span><span class="hljs-params">(<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>)&gt; <span class="hljs-number">4</span>)</span></span>;
+};
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Der</span> :<span class="hljs-keyword">public</span> Base
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span><span class="hljs-keyword">noexcept</span> <span class="hljs-keyword">override</span></span>; <span class="hljs-comment">//burada sentaks hatası yok, exception throw etmeyeceğine dair bir garanti verebilir. Fakat bunun tam tersi mümkün değil.</span>
+    <span class="hljs-comment">//void func(); //sentaks hatası</span>
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">bar</span><span class="hljs-params">()</span><span class="hljs-title">noexcept</span><span class="hljs-params">(<span class="hljs-keyword">sizeof</span>(<span class="hljs-type">int</span>)&gt;<span class="hljs-number">8</span>)</span> <span class="hljs-keyword">override</span></span>;
+};
+</code></pre>
+<blockquote>
+<p>Liskov substition  Promise no less, require no more. Kalıtımdaki türümüş sınıflar için daha azını vaadedmezsin ve daha fazlasını talep edemezsin. Kalıtımdaki türemiş sınıflar için geçerli.</p>
+</blockquote>
+<hr>
+<p>Sınıfın move constructor/assignment ve swap/memory deallocation fonksiyonlarının noexcept garantisi vermesi gerekiyor.</p>
+<ul>
+<li>Bir sınıfın destruconstructorı default olarak noexcept.</li>
+<li>Derleyici özel üye fonksiylarının noexcept olup olmadığını koda bakarak static olarak anlıyor. Ona göre bu specifier ile niteliyor</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>{
+    Nec n;
+    <span class="hljs-built_in">static_assert</span>(std::is_no_throw_destructible_v&lt;Myclass&gt;); <span class="hljs-comment">//emin olmadığımız durumda bu şekilde sınayabiliriz.</span>
+};
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Nec</span>{};
+
+
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;
+    cout.<span class="hljs-built_in">setf</span>(ios::boolalpha);
+    cout &lt;&lt; <span class="hljs-string">&quot;is default constructor noexcept: &quot;</span> &lt;&lt; is_nothrow_default_constructible_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    cout &lt;&lt; <span class="hljs-string">&quot;is destructor noexcept: &quot;</span> &lt;&lt; is_nothrow_default_destructible_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    cout &lt;&lt; <span class="hljs-string">&quot;is copy constructor noexcept: &quot;</span> &lt;&lt; is_nothrow_copy_constructible_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    cout &lt;&lt; <span class="hljs-string">&quot;is copy assignment noexcept: &quot;</span> &lt;&lt; is_nothrow_copy_assignable_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    cout &lt;&lt; <span class="hljs-string">&quot;is move constructor noexcept: &quot;</span> &lt;&lt; is_nothrow_move_constructible_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    cout &lt;&lt; <span class="hljs-string">&quot;is move assignment noexcept: &quot;</span> &lt;&lt; is_nothrow_move_assignable_v&lt;Myclass&gt; &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;    
+}
+</code></pre>
+<p>Hepsi true dönüyor.</p>
+<p>Eğer sınıfa bir string alaman konursa, copy ve copy assignment false oluyor, eğer string sınıfının kopyalama işlemleri bu garantiyi verseydi myclass sınıfıda aynı garantiyi vericekti.</p>
+<p>Emin olmadığımız durumda <code>static_assert</code> ile bunu test edebiliriz.</p>
+<p>C++20 ile default ederkende yapabiliyoruz. <code>Myclass()noexcept = default;</code> şeklinde.</p>
+<h5 id="exception-garantileri">Exception Garantileri</h5>
+<p>Bir fonksiyonun exception gönderme garanti seviyeleri:</p>
+<ul>
+<li>Basic garanti: herhangi bir şekilde fonksiyon exception throw ederse nesne invalid bir state'de olmayacak ve bir kaynak sızdırmayacak. Program state'i halen geçerli durumda kalmalı.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> <span class="hljs-comment">// basic garantiyi vermiyor.</span>
+</span>{
+    <span class="hljs-keyword">auto</span> p = <span class="hljs-keyword">new</span> std::<span class="hljs-built_in">string</span>(<span class="hljs-string">&quot;ahmet&quot;</span>);
+    <span class="hljs-comment">//other code</span>
+    <span class="hljs-keyword">delete</span> p; 
+}
+</code></pre>
+<ul>
+<li>
+<p>Strong garanti: Basic garantinin verdiği garantileri veriyor ve buradan exception ile çıkılırsa fonksiyonun state'inde herhangi bir değişiklik olmayacağını belirtiyor. Bu fonksiyona çağrı yapıldığında, ya işini yapıcak ya da programın state'i çağırılmadan önceki konumda kalıcak. <strong>Copy and Swap</strong>.</p>
+</li>
+<li>
+<ul>
+<li>Standart kütüphanenin bir çok fonksiyonu da bu şekilde niteleniyor.</li>
+</ul>
+</li>
+<li>
+<p>NoExcept Garantisi: Eğer bu fonksiyon çağırılırsa exception throw edilmeyecek. Eğer bu durumda bir exception throw edilirse <code>std::terminate</code>'in çağırılıyor.</p>
+</li>
+<li>
+<ul>
+<li>Bu garantiyi ya fonksiyonun exception throw etmeyeceğinden emin olmamız gerekiyor.</li>
+</ul>
+</li>
+</ul>
+<p>Move constructor ve move assignment noexcept garantisi vermesi derleyicinin daha optimize bir kod yazabileceği anlamına geliyor.</p>
+<pre><code class="language-c++">
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span>{
+<span class="hljs-keyword">public</span>: 
+    <span class="hljs-built_in">Student</span>(<span class="hljs-type">const</span> <span class="hljs-type">char</span> *name): <span class="hljs-built_in">m_name</span>(name){}
+    <span class="hljs-built_in">Student</span>(<span class="hljs-type">const</span> Student&amp; other): <span class="hljs-built_in">m_name</span>(other.m_name){std::cout &lt;&lt; <span class="hljs-string">&quot;copy ctor&quot;</span> &lt;&lt; m_name&lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;}
+    <span class="hljs-built_in">Student</span>(Student&amp;&amp; other): <span class="hljs-built_in">m_name</span>(std::<span class="hljs-built_in">move</span>(other.m_name)){std::cout &lt;&lt; <span class="hljs-string">&quot;move ctor&quot;</span>&lt;&lt;m_name&lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;}
+    <span class="hljs-function">std::string <span class="hljs-title">getName</span><span class="hljs-params">()</span><span class="hljs-type">const</span></span>{<span class="hljs-keyword">return</span> m_name;}
+<span class="hljs-keyword">private</span>:
+    std::string m_name;
+}
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    std::vector&lt;Student&gt; vec{<span class="hljs-string">&quot;Omer faruk yesilyurt&quot;</span>, <span class="hljs-string">&quot;Ali Hüseyin Mehmet&quot;</span>, <span class="hljs-string">&quot;Remzi Cansin Onder&quot;</span>}
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    vec.<span class="hljs-built_in">push_back</span>(<span class="hljs-string">&quot;Aytemiz Nazligul Aybakan&quot;</span>); <span class="hljs-comment">//reallocation olucak</span>
+    <span class="hljs-comment">//</span>
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+}
+</code></pre>
+<p>Eski bellek alanından yeni alanına aktarılırken copy constructor çağırılıyor. Bunun nedeni move constructor'ın noexcept olmamasıydı. Eğer move constructor aşağıdaki gibi</p>
+<p><code>Student(Student&amp;&amp; other)noexcept: m_name(std::move(other.m_name)){std::cout &lt;&lt; &quot;move ctor&quot;&lt;&lt;m_name&lt;&lt; &quot;\n&quot;;}</code> noexcept garantisi verilmesi gerekiyor. Burada <code>push_back</code> strong garanti veriyor.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Mystr</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Mystr</span>(): <span class="hljs-built_in">m_str</span>(<span class="hljs-number">1000</span>,<span class="hljs-string">&#x27;A&#x27;</span>) <span class="hljs-comment">//parantez olduğunda fill, küme parantezi olduğunda initializ oluyor.</span>
+    {}
+    <span class="hljs-built_in">Mystr</span>(<span class="hljs-type">const</span> Mystr&amp; other): <span class="hljs-built_in">m_str</span>(other.m_str){}
+    <span class="hljs-built_in">Mystr</span>(Mystr&amp;&amp; other)<span class="hljs-keyword">noexcept</span>: <span class="hljs-built_in">m_str</span>(std::<span class="hljs-built_in">move</span>(other.m_str)){}
+<span class="hljs-keyword">private</span>:
+    std::string m_str;
+}
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std::chrono;
+    <span class="hljs-function">std::vector&lt;Mystr&gt; <span class="hljs-title">vec</span><span class="hljs-params">(<span class="hljs-number">1&#x27;000&#x27;000</span>)</span></span>;    
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    <span class="hljs-keyword">auto</span> tp_start = steady_clock::<span class="hljs-built_in">now</span>();
+    vec.<span class="hljs-built_in">reserve</span>(vec.<span class="hljs-built_in">capacity</span>() + <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">auto</span> tp_end = steady_clock::<span class="hljs-built_in">now</span>();
+    cout &lt;&lt; <span class="hljs-built_in">duration</span>&lt;<span class="hljs-type">double</span>, std::milli&gt; (tp_end - tp_start).<span class="hljs-built_in">count</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+}
+</code></pre>
+<blockquote>
+<p>4.ders başiangıcı</p>
+</blockquote>
+<p>Override keyword'ü contextual keyword. Belirli bir contex'te anahtar sözcük gibi davranırken, diğer durumlarda bir identifier gibi kullanabiliyoruz.</p>
+<ul>
+<li>Bir taban sınıfın bir fonksiyonu override ederken bu keyword ile belirliyoruz. Örneğin aşağıdaki fonksiyonda foo fonksiyonunda virtual dispatch gerçekleşmeyecek.</li>
+<li>Taban sınıfın virtual olmayan bir fonksiyonunu override etmeye çalıştığımızda, bu durum sentaks hatası oluşturmuyor kod programcının beklentisindeki gibi çalışmayabilir.</li>
+<li>Taban sınıfın bir sanal fonksiyonu var ve birden fazla türemiş sınıf, bu sınıftan fonksiyonu override ediyor olabilir ve taban sınıfından fonksiyonun da bir değişiklik yaptığımızda burada değiştirilmesi gereken yerleri bulmamıza yarıyor.</li>
+</ul>
+<p>Bu yüzden override ettiğin fonksiyonlarda bunu kullan.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span>;
+      <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">unsigned</span> <span class="hljs-type">int</span>)</span></span>;
+};
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Der</span> : <span class="hljs-keyword">public</span> Base
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span> <span class="hljs-keyword">override</span></span>; <span class="hljs-comment">//override keyword&#x27;ü ile override edildiğini belirtiyoruz.</span>
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-type">int</span>)</span></span>;
+}
+</code></pre>
+<ul>
+<li>Destructor için her zaman <code>noexcept</code> ile bildiriliyor. Onun için bunun exception throw edilmemesi gerekiyor</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>{<span class="hljs-keyword">public</span>:    ~<span class="hljs-built_in">Myclass</span>();};
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass1</span>{<span class="hljs-keyword">public</span>:    ~<span class="hljs-built_in">Myclass</span>();};
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass2</span>{<span class="hljs-keyword">public</span>:    ~<span class="hljs-built_in">Myclass</span>()<span class="hljs-built_in">noexcept</span>(<span class="hljs-literal">false</span>);};
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;
+    cout &lt;&lt; is_nothrow_destructible_v&lt;Myclass&gt;; <span class="hljs-comment">//true</span>
+    cout &lt;&lt; is_nothrow_destructible_v&lt;Myclass1&gt;;  <span class="hljs-comment">//true</span>
+    cout &lt;&lt; is_nothrow_destructible_v&lt;Myclass2&gt;;  <span class="hljs-comment">//false</span>
+}
+</code></pre>
+<p>Bir önceki derste kalınan örnekten devam,</p>
+<pre><code class="language-c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;chrono&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span></span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Mystr</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Mystr</span>(): <span class="hljs-built_in">m_str</span>(<span class="hljs-number">1000</span>,<span class="hljs-string">&#x27;A&#x27;</span>) <span class="hljs-comment">//parantez olduğunda fill, küme parantezi olduğunda initializ oluyor.</span>
+    {}
+    <span class="hljs-built_in">Mystr</span>(<span class="hljs-type">const</span> Mystr&amp; other) = <span class="hljs-keyword">default</span>;
+    <span class="hljs-built_in">Mystr</span>(Mystr&amp;&amp; other)<span class="hljs-keyword">noexcept</span>: <span class="hljs-built_in">m_str</span>(std::<span class="hljs-built_in">move</span>(other.m_str)){}
+    <span class="hljs-comment">//Mystr(Mystr&amp;&amp; other)noexcept(false) = default;</span>
+    <span class="hljs-comment">//Mystr(Mystr&amp;&amp; other)noexcept = default;</span>
+<span class="hljs-keyword">private</span>:   std::string m_str; };
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std::chrono;
+    <span class="hljs-function">std::vector&lt;Mystr&gt; <span class="hljs-title">vec</span><span class="hljs-params">(<span class="hljs-number">1&#x27;000&#x27;000</span>)</span></span>;    
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    <span class="hljs-keyword">auto</span> tp_start = steady_clock::<span class="hljs-built_in">now</span>();
+    vec.<span class="hljs-built_in">reserve</span>(vec.<span class="hljs-built_in">capacity</span>() + <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">auto</span> tp_end = steady_clock::<span class="hljs-built_in">now</span>();
+    cout &lt;&lt; <span class="hljs-built_in">duration</span>&lt;<span class="hljs-type">double</span>, std::milli&gt; (tp_end - tp_start).<span class="hljs-built_in">count</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+    std::cout&lt;&lt; <span class="hljs-string">&quot;capacity: &quot;</span> &lt;&lt; vec.<span class="hljs-built_in">capacity</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+}
+</code></pre>
+<p><a href="https://onlinegdb.com/T03qiqFB7">ornek kod</a></p>
+<blockquote>
+<p>Ölçmek istediğimiz event ne ise ondan önce bir zaman oluyoruz ve ondan sonra bir zaman oluyoruz ve aradaki farkı <code>duration</code>  alıyoruz. Representation türü duration'ın ilk template paramteresi, 2.paramteresi ise ration türü.</p>
+</blockquote>
+<p>Kendi sınıflarımızda, implicitly declared ise derleyici karar veriyor eğer bu durumda kendimiz belirliyiceksek genellikle belirli koşullarda karar veriyoruz.</p>
+<h3 id="moved-from-state">Moved From State</h3>
+<p>Bir nesnenin destructor o nesnenin kaynağı çalınsa dahi erişilebilir olması gerekiyor. Öyle senaryolar olabilirki, bir nesnenin kaynağını bilerek ve isteyerek verim artışı sağlammak için o nesnenin kaynağını çalıyırouz. Bu nesneye moved-from statedeki nesne diyoruz.  Burada standard kütüphane  moved-from state'deki nesne için bazı garantiler veriyor.</p>
+<ul>
+<li>Destructible olması</li>
+<li>Unspecified fakat geçerli bir durumda olması</li>
+<li>
+<ul>
+<li>Örneğin func fonksiyonunda r'nin değerinin ne olduğunu bilemeyiz, ve buna yeni bir değer atabiliriz. Buna güvenerek kodumuzu yazabiliriz.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>{};
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(Myclass &amp; r)</span> </span>{    }
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(std::string &amp; r)</span></span>{r.<span class="hljs-built_in">is_empty</span>();}
+</code></pre>
+<p>swap template'i</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">Swap</span><span class="hljs-params">(T&amp;x, T&amp;y)</span>
+</span>{
+    <span class="hljs-function">T <span class="hljs-title">temp</span><span class="hljs-params">(std::move(x))</span></span>;
+    x = std::<span class="hljs-built_in">move</span>(y); <span class="hljs-comment">//x&#x27;i moved-from statte&#x27;ki haliyle kullanıyoruz.</span>
+    y = std::<span class="hljs-built_in">move</span>(temp);
+}
+</code></pre>
+<p>3.Parti kütüphaneler için bu garantileri vermiyor olabilir. Bu kütüphaneleri kullanırken moved-from state'e dikkat etmek gerekiyor.</p>
+<ul>
+<li>Standart kütüphane için genellikle moved-from state'deki nesneyi genellikle default state'e getiriyor</li>
+</ul>
+<h4 id="invariant">Invariant</h4>
+<ul>
+<li>func fonksiyonun Myclass nesnesini kullanabilmesi için Myclass sınıfının invarian'ının tutuyor olması gerekiyor. Eğer tutmuyorsa logic bir hata var demektir.</li>
+<li>Eğer bu invarianlar başka bir api kullanımı yüzünden tutmuyorsa burada fonksiyon kullanabiliriz.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>{
+<span class="hljs-keyword">private</span>:
+    <span class="hljs-type">int</span> mx;
+};
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(Myclass x)</span></span>{ }
+</code></pre>
+<p>Bizim kendi türlerimiz söz konusu olduğu zaman:</p>
+<ol>
+<li>Yazılımını derleyiciye bırakmak</li>
+<li>Move memberları kendimiz yazabiliriz. Örneğin sınıfın bir elemanı handle, burada derleyicinin yazacağı copy'ye kendimiz yazıyoruz. Sınıfın bu yönetimi kendimiz yapmalıyız.</li>
+<li>Copylama/taşıma delete edilmiş olsun.</li>
+</ol>
+<p>Bir sınıfı kendimiz yazıyorsak, onu derleciyinin oluşturduğu move memberları nasıl yazması gerekiyorsa o şekilde taşıyor.</p>
+<ul>
+<li>Primitive türlerin taşınması ve kopyalanması arasında bir fark yok.</li>
+</ul>
+<p>Örneğin yukarıda mx'in 0 olması invariantları bozuyorsa bunu belirtmemiz gerekiyor.</p>
+<p>a. Hiç dokunmadan, moved-from state'e ilişkin API'yı kullanacaklara bunu dokumante etmek.
+b. Move memberları tamamen kullanıma kapatabiliriz.
+c. 3 derleyicinin yazdığı move-memberlar invariantları bozacağı için burada move constructor'ı kendimiz yazabiliriz.</p>
+<blockquote>
+<p>Move constructor'ı yazarken, destructor, copy constructor'ı kendimiz yazıyorsak move memberları da bizim implemente etmemmiz gerekiyor.</p>
+</blockquote>
+<ul>
+<li>Bazen move memberların yazılmasının nedeni, derleyicinin yazdığı move memberların sınıfın invariantlarını bozuyor.</li>
+</ul>
+<h5 id="invariantlar-neden-bozulur">Invariantlar Neden Bozulur?</h5>
+<ul>
+<li>Invariantların kısıtlı olması, sınıfın belli üye memberlarının kısıtlı olması gerekiyordur. Bu durumda move memberlarının yazılması gerekiyor.</li>
+<li>Sınıfların üye elemanları arasında bir bağımlılık olabilir. Örneğin bir üçgen sınıfında kenarları ve alanı tuttuk, bir durumda kenarlar değiştiğinde alanın da değişmesi gerekiyor. Eğer değişmezse invariantları bozulmuş oluyor.</li>
+<li>Sınıfın smart-pointer'ları yüzünden invariantlarda bozulmuş olabilir.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Card</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Card</span>(<span class="hljs-type">const</span> std::string&amp;val): <span class="hljs-built_in">m_val</span>(val)
+    {
+        <span class="hljs-comment">//assertValidCard(value); //ensure the value is always valid</span>
+    }
+    <span class="hljs-function">std::string <span class="hljs-title">getVal</span><span class="hljs-params">()</span><span class="hljs-type">const</span></span>{<span class="hljs-keyword">return</span> m_val;}
+
+<span class="hljs-keyword">private</span>:
+    std::string m_val; <span class="hljs-comment">// ace + &quot;-of-&quot; + diamonds</span>
+};
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Card c1{<span class="hljs-string">&quot;king_of_herats&quot;</span>};
+    <span class="hljs-keyword">auto</span> c2 = std::<span class="hljs-built_in">move</span>(c1);
+    std::cout &lt;&lt; c2.<span class="hljs-built_in">getVal</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>; <span class="hljs-comment">//moved from state&#x27;de boş oldu fakat burada invariantlık bozulmuş oldu.</span>
+}
+</code></pre>
+<ul>
+<li>
+<p>Moved from state burada tutumuyor. Bu örnek için default constructed bir state'de bulunmuyor. Bu sınıfın invariant'ı taşınmış olsa bile <code>ace+of+diamonds</code> gibi bir durumda olması gerekiyor.</p>
+</li>
+<li>
+<p>Sınıfın move memberlarını değilde, diğer çağırılabilecek fonksiyonlarını invariantlarına göre döndürebilir.</p>
+</li>
+<li>
+<p>Değer taşıyıp taşımadığını test edebiliriz.</p>
+</li>
+<li>
+<p>Dokümante edebiliriz. Fakat bunu çok tercih etme</p>
+</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span>
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">InString</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">IntString</span>(<span class="hljs-type">int</span> val = <span class="hljs-number">0</span>): <span class="hljs-built_in">m_val</span>(val), <span class="hljs-built_in">m_sval</span>(std::<span class="hljs-built_in">to_string</span>(val)){}
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">set_value</span><span class="hljs-params">(<span class="hljs-type">int</span> i)</span>
+    </span>{
+        m_val = i;
+        m_sval = std::<span class="hljs-built_in">to_string</span>(i);
+    }
+    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span><span class="hljs-type">const</span>
+    </span>{
+        std::cout&lt;&lt;<span class="hljs-string">&quot;[&quot;</span> &lt;&lt; m_val &lt;&lt; <span class="hljs-string">&quot;/&#x27;&quot;</span> &lt;&lt; m_sval &lt;&lt; &lt;&lt;<span class="hljs-string">&quot;&#x27;]\n&quot;</span>;
+    }
+    <span class="hljs-keyword">private</span>:
+    std::string m_sval;
+    <span class="hljs-type">int</span> m_val;
+
+};
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    IntString is1{<span class="hljs-number">12</span>};
+    IntString is2;
+    is1.<span class="hljs-built_in">print</span>();
+    is2.<span class="hljs-built_in">print</span>();
+    is2 = std::<span class="hljs-built_in">move</span>(is1);
+    is1.<span class="hljs-built_in">print</span>();
+    is2.<span class="hljs-built_in">print</span>();
+}
+</code></pre>
+<ul>
+<li>taşımadan sonra is1'in invariant'ı bozulmuş oluyor.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SharedInt</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-keyword">explicit</span> <span class="hljs-title">SharedInt</span><span class="hljs-params">(<span class="hljs-type">int</span> val)</span>: m_sp{</span>std::<span class="hljs-built_in">make_shared</span>&lt;<span class="hljs-type">int</span>&gt;(val)} {}
+    
+    <span class="hljs-function">std::string <span class="hljs-title">as_string</span><span class="hljs-params">()</span><span class="hljs-type">const</span></span>{<span class="hljs-keyword">return</span> std::<span class="hljs-built_in">to_string</span>(*m_sp);}
+    <span class="hljs-comment">/*
+    Yaparak ortada kaldırılabilir.
+    std::string as_string()const{
+        
+        if(m_sp)    
+            return std::to_string(*m_sp);
+        else 
+            return &quot;&quot;;
+    }
+    */</span>
+<span class="hljs-keyword">private</span>:
+    std::shraed_ptr&lt;<span class="hljs-type">int</span>&gt; m_sp;
+};
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    SharedInt x{<span class="hljs-number">20</span>};
+    SharedInt y{x};
+    std::cout &lt;&lt; x.<span class="hljs-built_in">as_string</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+
+    SharedInt a{<span class="hljs-number">29</span>};
+    SharedInt b{std::<span class="hljs-built_in">move</span>(a)};
+    std::cout &lt;&lt; a.<span class="hljs-built_in">as_string</span>() &lt;&lt; <span class="hljs-string">&quot;\n&quot;</span>;
+}
+</code></pre>
+<p>SharedInt nesnesine bir değer veriliyor ve böylece birden fazla sharedint nesnesi aynı kaynağa erişilebiliyor. Burada static ile karıştırılmamalı.</p>
+<p>b'ye a'yı taşıdık, burada boş bir nesneyi dereference etmiş olucaz.</p>
+<h3 id="move-semantics-with-generic-programming">Move Semantics With Generic Programming</h3>
+<p>Taşımanın olup olmamasının ne olduğu bazen türün tanımına bağlı oluyor.</p>
+<h4 id="perfect-forwarding-universal-referans">Perfect Forwarding (Universal Referans)</h4>
+<p>Özel bir sentaks ile oluşturuluyor.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(T&amp;&amp; x)</span><span class="hljs-comment">//x universal referans</span>
+</span>{
+    <span class="hljs-comment">//...</span>
+}
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">auto</span> &amp;&amp;r = <span class="hljs-number">12</span>; <span class="hljs-comment">//r bir universal referans    </span>
+}
+</code></pre>
+<p>Forwarding referansın birden fazla kullanım alanı ortaya çıktı.</p>
+<p>Universal referans demek, bu referansa her value kategorisinden const veya non-const tüm değerler bağlanabilir demek.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(std::string &amp;&amp;r)</span> </span>{}
+<span class="hljs-comment">//bu fonksiyona sadece ve sadevece rvalue bağlanabilir.</span>
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-type">const</span> T&amp;)</span></span>{} <span class="hljs-comment">//const sol taraf referans. </span>
+<span class="hljs-comment">//bu fonksiyona da her şeyi buraya gönderebiliriz. </span>
+</code></pre>
+<ul>
+<li>Bu iki fonksiyonun farkı, gönderilen varlığın değer kategorisini artık bilmemiz için bir imkan yok. 2.fonksiyon ayrıca const'luk bilgisini de kaybediyoruz.</li>
+<li>Fakat Universal referans ile bu bilgileri kaybetmiyoruz. Bu bilgileri compile time'da kullanabiliriz.</li>
+</ul>
+<p>Bu fonksiyonlara çağrı yaparken template argüman <code>explicit olarak belirlenmezse</code></p>
+<table>
+<thead>
+<tr>
+<th>constness</th>
+<th>Value Category</th>
+<th>T Type</th>
+<th>x Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non constant</td>
+<td>L Value</td>
+<td>Myclass &amp;</td>
+<td>Myclass &amp;</td>
+</tr>
+<tr>
+<td>Non constanat</td>
+<td>R value</td>
+<td>Myclass</td>
+<td>Myclass &amp;&amp;</td>
+</tr>
+<tr>
+<td>Const</td>
+<td>L value</td>
+<td>const Myclass &amp;</td>
+<td>const Myclass&amp;</td>
+</tr>
+<tr>
+<td>Non constanat</td>
+<td>R value</td>
+<td>const Myclass</td>
+<td>const Myclass &amp;&amp;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Bu fonksiyona her şey gönderilebiliyor.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(T&amp;&amp; x)</span>
+</span>{
+   
+}
+</code></pre>
+<p>Artık <code>type_trait</code> kullanılarak argümanın const olup olmadığını anlayabiliyoruz. Value category'sini hem <code>x</code>'ten hem de <code>T</code> türünden anlayabiliyoruz. Gönderilen argümanın ne olup olmadığnı anlayabiliyoruz.</p>
+<p>Peki bu ne işimize yarıyor?</p>
+<p>Örneğin: başka bir fonksiyona gönderirken bu bilgileri kullanabiliriz.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(T&amp;&amp; arg)</span>
+</span>{
+    <span class="hljs-comment">//eğer T türü referans türü ise</span>
+    <span class="hljs-built_in">bar</span>(arg);
+    <span class="hljs-comment">//eğer T türü referans türü değil ise</span>
+    <span class="hljs-built_in">bar</span>(std::<span class="hljs-built_in">move</span>(arg));
+    <span class="hljs-comment">// Fakat bunu yapmak yerine artık std::forward kullanılaiblir.</span>
+    <span class="hljs-built_in">bar</span>(std::forward&lt;T&gt;(arg)); <span class="hljs-comment">//arg&#x27;in tü</span>
+}
+</code></pre>
+<ul>
+<li>Eğer sol taraf değeri ise sol taraf değeri olarak, eğer sağ taraf değeri ise onu sağ taraf değerine dönüştürüyor.</li>
+</ul>
+<p><strong>Perferct forwarding</strong>: Bir fonksiyona gönderilen argümanın değer kategorisini ve constness bilgisini kaybetmeden başka bir fonksiyona göndermek.</p>
+<p>Elimizde bir <code>foo()</code> fonksiyonu olsun ve bu fonksiyonu <code>call_foo()</code> üzerinden çağırmamız gerekiyor olabilir. Bu durumda bizim foo fonksiyonuna göndermek istediğimiz argümanların, call_foo fonksiyonu tarafından gönderilirken de
+aynı değer kategorisinde ve constness bilgisinde olması gerekiyor.</p>
+<p>Starndard kütüphane de kullanıldığı yerler. Container'ların <code>emplace</code> fonksiyonları. <code>make_unique</code> fonksiyonu.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>
+{};
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-type">const</span> Myclass&amp; x)</span></span>{std::cout &lt;&lt; <span class="hljs-string">&quot;func(const Myclass&amp;)\n&quot;</span>;}
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(Myclass&amp;&amp; x)</span></span>{std::cout &lt;&lt; <span class="hljs-string">&quot;func(Myclass&amp;&amp;)\n&quot;</span>;}
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(Myclass&amp; x)</span></span>{std::cout &lt;&lt; <span class="hljs-string">&quot;func(Myclass&amp;)\n&quot;</span>;}
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-type">const</span> Myclass&amp;&amp; x)</span></span>{std::cout &lt;&lt; <span class="hljs-string">&quot;func(const Myclass&amp;&amp;)\n&quot;</span>;}
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">call_func</span><span class="hljs-params">(T&amp;&amp; x)</span>
+</span>{
+    <span class="hljs-built_in">func</span>(std::forward&lt;T&gt;(x)); <span class="hljs-comment">//func(Myclass&amp;)</span>
+}
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass m;
+    <span class="hljs-type">const</span> Myclass cm;
+    <span class="hljs-built_in">func</span>(m); <span class="hljs-comment">//func(Myclass&amp;)</span>
+    <span class="hljs-built_in">call_func</span>(m);
+    <span class="hljs-built_in">func</span>(cm); <span class="hljs-comment">//func(const Myclass&amp;)</span>
+    <span class="hljs-built_in">call_func</span>(cm);
+    <span class="hljs-comment">//func(std::move(m)); //func(Myclass&amp;&amp;)</span>
+    <span class="hljs-built_in">call_func</span>(std::<span class="hljs-built_in">move</span>(m));
+    <span class="hljs-comment">//func(std::move(cm)); //func(const Myclass&amp;&amp;)</span>
+    <span class="hljs-built_in">call_func</span>(std::<span class="hljs-built_in">move</span>(cm));
+}
+</code></pre>
+<p><a href="https://onlinegdb.com/NW070Mayf">ornek cıktısı:</a></p>
+<ul>
+<li>Eğer çağırılan fonksiyonun birden fazla paramteresi olsaydı.</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T, <span class="hljs-keyword">typename</span> U&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">call_foo</span><span class="hljs-params">(T&amp;&amp; x, U&amp;&amp; y)</span>
+</span>{
+    <span class="hljs-built_in">foo</span>(std::forward&lt;T&gt;(x), std::forward&lt;U&gt;(y));
+}
+<span class="hljs-comment">// variadic hale getirmek için</span>
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span>...Args&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">call_foo1</span><span class="hljs-params">(Arg&amp;&amp;...args)</span>
+</span>{
+    <span class="hljs-built_in">foo</span>(std::forward&lt;Args&gt;(args)...); <span class="hljs-comment">//pack expansion&#x27;dan faydalandık.</span>
+}
+</code></pre>
+<ul>
+<li>MakeUnique fonksiyon şablonuna bakalım</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function">teamplate&lt;<span class="hljs-keyword">typename</span> T, <span class="hljs-keyword">typename</span> ..Args&gt;
+std::unique_ptr&lt;T&gt; <span class="hljs-title">MakeUnique</span><span class="hljs-params">(Args&amp;&amp;...args)</span>
+</span>{    
+    <span class="hljs-keyword">return</span> std::<span class="hljs-built_in">unique_ptr</span>&lt;T&gt;(<span class="hljs-keyword">new</span> <span class="hljs-built_in">T</span>(std::forward&lt;Args&gt;(args)...));
+}
+</code></pre>
+<ul>
+<li>Forward implementasyonu:</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-keyword">constexpr</span> T&amp;&amp; <span class="hljs-title">forward</span><span class="hljs-params">(<span class="hljs-keyword">typename</span> std::remove_reference&lt;T&gt;::type&amp; t)</span> <span class="hljs-keyword">noexcept</span>
+<span class="hljs-comment">//constexpr T&amp;&amp; forward(std::remove_reference&lt;T&gt;::type&amp; t) noexcept</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">static_cast</span>&lt;T&amp;&amp;&gt;(t);
+}
+</code></pre>
+<ul>
+<li><code>remove_reference&lt;T&gt;</code> fonksiyonu T türünü referans olmaktan kurtarıyor artık T lvalue expresion, artık static cast ile lvalue türüne cast edilmiş olucak.</li>
+<li>
+<ul>
+<li>T türü Myclass türü ise return değeri Myclass&amp; oluyor. Eğer T türü referans tür değilse, return değeri t'nin kendisi l-expression olmasına rağmen X-Value dolayısıyla R value expression oluyor.</li>
+</ul>
+</li>
+</ul>
+<p>Orijinal implementasyonu</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+T&amp;&amp; <span class="hljs-title">Forward</span><span class="hljs-params">( std::<span class="hljs-type">remove_reference_t</span>&lt;T&gt;&amp; t)</span> <span class="hljs-keyword">noexcept</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">static_cast</span>&lt;T&amp;&amp;&gt;(t);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">class</span> T&gt;
+T&amp;&amp; <span class="hljs-title">Forward</span><span class="hljs-params">( std::<span class="hljs-type">remove_refernce_t</span>&lt;T&gt; &amp;&amp; t)</span> <span class="hljs-keyword">noexcept</span>
+</span>{
+    <span class="hljs-built_in">static_assert</span>(!std::is_lvalue_reference&lt;T&gt;::value, <span class="hljs-string">&quot;Cannot forward an rvalue as an lvalue.&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">static_cast</span>&lt;T&amp;&amp;&gt;(t);
+}
+</code></pre>
+<blockquote>
+<p>Templateler implicitly inline aslında.</p>
+</blockquote>
+<ul>
+<li>T'nin türü yine Myclass ise paramteresi Myclass &amp;&amp;, static_assert ile bunu kontrol ediyoruz, burada T'türünün lvalue referans türü olmaması gerekiyor.</li>
+<li>Bunu yapmasının nedeni, rvalue'yu lvalue dönüştürülmesine gerek yok. Herhangi bir nedenden</li>
+</ul>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Myclass</span>{};
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">Forward</span>&lt;Myclass&amp;&gt;(Myclass{}); <span class="hljs-comment">// bu senaryoda 2.fonksiyon sayesinde hata yakalınıyor.</span>
+}
+</code></pre>
+<p>call_func fonksiyonunu yazarken <code>declytpe</code> kullanarakta gerçekjleştirebiliriz.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+<span class="hljs-type">void</span> <span class="hljs-title">call_func</span><span class="hljs-params">(T&amp;&amp; arg)</span>
+</span>{
+    <span class="hljs-built_in">func</span>(std::forward&lt;<span class="hljs-keyword">decltype</span>(arg)&gt;(arg)); <span class="hljs-comment">//func(Myclass&amp;)</span>
+}
+</code></pre>
+<p>Örneğin lambda ifadesinde aşağıdaki gibi kullanabiliriz.</p>
+<pre><code class="language-c++"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Myclass m;
+    <span class="hljs-type">const</span> Myclass m;
+    <span class="hljs-keyword">auto</span> fn = [](<span class="hljs-keyword">auto</span>&amp;&amp; r){
+        <span class="hljs-built_in">func</span>(std::forward&lt;<span class="hljs-keyword">decltype</span>(r)&gt;(r));
+    };
+    <span class="hljs-built_in">fn</span>(m);
+    <span class="hljs-built_in">fn</span>(std::<span class="hljs-built_in">move</span>(m));
+    std::cout &lt;&lt; <span class="hljs-string">&quot;------------------\n&quot;</span>;
+    <span class="hljs-built_in">fn</span>(cm);
+    <span class="hljs-built_in">fn</span>(std::<span class="hljs-built_in">move</span>(cm));
+    std::cout &lt;&lt; <span class="hljs-string">&quot;------------------\n&quot;</span>;
+}
+</code></pre>
+<p><img src="file:////home/thecoder/workspace/NecatiErginCppStudy/Ders_Notlari_CO/IleriCPP/res/forwarding_table.png" alt="Alt text"></p>
+<p>Burada bir sorunlu durum function overloading resoulution'da karşımıza çıkıyor.</p>
+<p>1 - 2 - 3 -4 seçimleri gösteriyor.</p>
+<p>no: çağırılması vaiable değil.</p>
+<pre><code class="language-c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Nec</span>
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">Nec</span>() = <span class="hljs-keyword">default</span>;
+    <span class="hljs-built_in">Nec</span>(<span class="hljs-type">const</span> Nec&amp;){std::cout &lt;&lt; <span class="hljs-string">&quot;copy ctor\n&quot;</span>;}
+    <span class="hljs-built_in">Nec</span>(Nec&amp;&amp;){std::cout &lt;&lt; <span class="hljs-string">&quot;move ctor\n&quot;</span>;}
+    <span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;
+    <span class="hljs-title">Nec</span><span class="hljs-params">(T&amp;&amp;)</span></span>{std::cout &lt;&lt; <span class="hljs-string">&quot;universal ctor\n&quot;</span>;} 
+};
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    Nec nec;
+    <span class="hljs-type">const</span> Nec xnec;
+    Nec a{xnec};
+    Nec b{nec}; <span class="hljs-comment">//burada copy ctor değil universal ctor çağırılıyor.</span>
+    Nec c{std::<span class="hljs-built_in">move</span>(nec)};
+    Nec d{std::<span class="hljs-built_in">move</span>(xnec)};
+    Nec e{<span class="hljs-number">10</span>}; <span class="hljs-comment">//universal constructor çağırılacak</span>
+}
+</code></pre>
+</div>
+        </div>
+            
+            
+        </body>
+        </html>
