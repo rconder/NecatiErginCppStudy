@@ -109,3 +109,16 @@
     - [Tuttuğu Türe erişme](5.hafta#tuttuğu-türe-erişme)
     - [Tuttuğu değere erişme](5.hafta#tuttuğu-değere-erişme)
     - [Any Üye Fonksiyonları](5.hafta#any-üye-fonksiyonları)
+
+## 6. Hafta 29-30.07.2023
+
+- [6.Hafta](6.hafta.md#6hafta)
+  - [İçindekiler](6.hafta.md#i̇çindekiler)
+  - [CTAD: Class Template Argument Deduction](6.hafta.md#ctad-class-template-argument-deduction)
+    - [Deduction Guide](6.hafta.md#deduction-guide)
+  - [Structure Binding](6.hafta.md#structure-binding)
+    - [Diziler için](6.hafta.md#diziler-için)
+    - [Sınıflar için](6.hafta.md#sınıflar-için)
+    - [Tuple Interface'i ile](6.hafta.md#tuple-interfacei-ile)
+    - [Kendi Sınıflarımız İle](6.hafta#kendi-sınıflarımız-i̇le)
+  - [Spaceship Operator](6.hafta#spaceship-operator)
