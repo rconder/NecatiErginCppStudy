@@ -158,6 +158,7 @@
     - [Precision](8.hafta.md#precision)
     - [Format Fonksiyonları](8.hafta.md#format-fonksiyonları)
     - [Custom Formatting](8.hafta.md#custom-formatting)
+
 ## 9. Hafta 19-20.08.2023
 
 - [9.Hafta](9.hafta.md#9hafta)
