@@ -183,3 +183,19 @@
     - [C++20 ile Gelen Değişiklikler](9.hafta.md#c20-ile-gelen-değişiklikler)
       - [consteval Fonksiyonlar](9.hafta.md#consteval-fonksiyonlar)
       - [Constinit](9.hafta.md#constinit)
+
+## 10. Hafta 26-27.08.2023
+
+- [10.Hafta](10.hafta.md#10hafta)
+  - [İçindekiler](10.hafta.md#i̇çindekiler)
+  - [Constexpr Fonksiyonlar](10.hafta.md#constexpr-fonksiyonlar)
+    - [Consteval fonksiyonlar](10.hafta.md#consteval-fonksiyonlar)
+    - [Constinit Fonksiyonlar](10.hafta.md#constinit-fonksiyonlar)
+  - [Attributelar](10.hafta.md#attributelar)
+    - [\[\[nodiscard\]\] attribute](10.hafta.md#nodiscard-attribute)
+  - [Concpetler](10.hafta.md#concpetler)
+    - [Conceptlerin Tanımlanması](10.hafta.md#conceptlerin-tanımlanması)
+      - [Requires Clause](10.hafta.md#requires-clause)
+        - [Conceptler ile birlikte kullanımı](10.hafta.md#conceptler-ile-birlikte-kullanımı)
+      - [Requires Expression](10.hafta.md#requires-expression)
+      - [Subsumption](10.hafta.md#subsumption)
