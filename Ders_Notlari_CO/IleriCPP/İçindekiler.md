@@ -199,3 +199,17 @@
         - [Conceptler ile birlikte kullanımı](10.hafta.md#conceptler-ile-birlikte-kullanımı)
       - [Requires Expression](10.hafta.md#requires-expression)
       - [Subsumption](10.hafta.md#subsumption)
+
+## 11. Hafta  19_02_09_2023
+
+- [11.Hafta](#11.hafta.md#11hafta)
+  - [İçindekiler](#11.hafta.md#i̇çindekiler)
+  - [Conseptler Konusu Devam](#11.hafta.md#conseptler-konusu-devam)
+    - [Derste anlatılan conceptler](#11.hafta.md#derste-anlatılan-conceptler)
+  - [C++20 Gelen Yeni Özellikler](#11.hafta.md#c20-gelen-yeni-özellikler)
+    - [Bitsel İşlemler ve Bitler](#11.hafta.md#bitsel-i̇şlemler-ve-bitler)
+      - [include\<bit\>](#11.hafta.md#includebit)
+        - [Bit Cast](#11.hafta.md#bit-cast)
+    - [Dependant Type](#11.hafta.md#dependant-type)
+    - [Source Location](#11.hafta.md#source-location)
+    - [Using Enum bildirimi](#11.hafta.md#using-enum-bildirimi)
