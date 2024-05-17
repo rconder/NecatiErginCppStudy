@@ -75,8 +75,9 @@
     },
     "[markdown]": {
         "editor.wordWrap": "on",
-        "editor.autoClosingBrackets": "never"
+        "editor.autoClosingBrackets": "never",
     },
+    
     "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.intelliSenseEngineFallback": "enabled"
 }
